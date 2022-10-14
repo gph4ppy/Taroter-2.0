@@ -12,7 +12,7 @@ struct TaroterApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                CardsView()
+                CardsView(viewModel: CardsViewModel())
             }
             .navigationViewStyle(.stack)
             .preferredColorScheme(.dark)
