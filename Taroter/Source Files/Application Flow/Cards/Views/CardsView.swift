@@ -10,16 +10,9 @@ import SwiftUI
 struct CardsView: View {
     var body: some View {
         ZStack {
-            // Background Overlay
-            RoundedRectangle(cornerRadius: 50)
-                .fill(TRColor.tyrianPurple)
-                .frame(height: 250)
-                .frame(maxHeight: .infinity, alignment: .top)
-                .offset(y: -110)
-                .blur(radius: 60)
+            BackgroundOverlay()
 
             VStack(spacing: 14) {
-                // Profile Header
                 HomeViewProfileHeader()
 
                 // Cards
