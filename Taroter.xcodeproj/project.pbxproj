@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
-		1CF0C1D828FA07FF00CAB508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* ContentView.swift */; };
+		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
 		1CF0C1DD28FA080400CAB508 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1DC28FA080400CAB508 /* Preview Assets.xcassets */; };
 		1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1DE28FA080400CAB508 /* Persistence.swift */; };
@@ -38,12 +38,12 @@
 /* Begin PBXFileReference section */
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
-		1CF0C1D728FA07FF00CAB508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		1CF0C1D928FA080400CAB508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CF0C1DC28FA080400CAB508 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CF0C1DE28FA080400CAB508 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1CF0C1E128FA080400CAB508 /* Taroter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Taroter.xcdatamodel; sourceTree = "<group>"; };
-		1CF0C1E328FA080400CAB508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF0C1E328FA080400CAB508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Taroter/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
 		1CF0C1E828FA080500CAB508 /* TaroterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaroterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1EC28FA080500CAB508 /* TaroterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterTests.swift; sourceTree = "<group>"; };
 		1CF0C1F228FA080500CAB508 /* TaroterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaroterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,13 +99,9 @@
 		1CF0C1D428FA07FF00CAB508 /* Taroter */ = {
 			isa = PBXGroup;
 			children = (
-				1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */,
-				1CF0C1D728FA07FF00CAB508 /* ContentView.swift */,
-				1CF0C1D928FA080400CAB508 /* Assets.xcassets */,
-				1CF0C1DE28FA080400CAB508 /* Persistence.swift */,
-				1CF0C1E328FA080400CAB508 /* Info.plist */,
-				1CF0C1E028FA080400CAB508 /* Taroter.xcdatamodeld */,
-				1CF0C1DB28FA080400CAB508 /* Preview Content */,
+				1CF0C20728FA089300CAB508 /* Source Files */,
+				1CF0C20828FA089C00CAB508 /* Supporting Files */,
+				1CF0C20928FA08A200CAB508 /* Resources */,
 			);
 			path = Taroter;
 			sourceTree = "<group>";
@@ -115,8 +111,9 @@
 			children = (
 				1CF0C1DC28FA080400CAB508 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
-			sourceTree = "<group>";
+			name = "Preview Content";
+			path = "Taroter/Resources/Preview Content";
+			sourceTree = SOURCE_ROOT;
 		};
 		1CF0C1EB28FA080500CAB508 /* TaroterTests */ = {
 			isa = PBXGroup;
@@ -133,6 +130,90 @@
 				1CF0C1F828FA080500CAB508 /* TaroterUITestsLaunchTests.swift */,
 			);
 			path = TaroterUITests;
+			sourceTree = "<group>";
+		};
+		1CF0C20728FA089300CAB508 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C20E28FA092B00CAB508 /* Common */,
+				1CF0C20A28FA08B200CAB508 /* Application Flow */,
+			);
+			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		1CF0C20828FA089C00CAB508 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C1E328FA080400CAB508 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CF0C20928FA08A200CAB508 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C1DB28FA080400CAB508 /* Preview Content */,
+				1CF0C1D928FA080400CAB508 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CF0C20A28FA08B200CAB508 /* Application Flow */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */,
+				1CF0C20B28FA08BC00CAB508 /* Onboarding */,
+				1CF0C20C28FA08C400CAB508 /* Cards */,
+			);
+			path = "Application Flow";
+			sourceTree = "<group>";
+		};
+		1CF0C20B28FA08BC00CAB508 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1CF0C20C28FA08C400CAB508 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C20D28FA08E400CAB508 /* Views */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		1CF0C20D28FA08E400CAB508 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C1D728FA07FF00CAB508 /* CardsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CF0C20E28FA092B00CAB508 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C20F28FA093100CAB508 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1CF0C20F28FA093100CAB508 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C21028FA093600CAB508 /* Local Storage */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CF0C21028FA093600CAB508 /* Local Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1CF0C1DE28FA080400CAB508 /* Persistence.swift */,
+				1CF0C1E028FA080400CAB508 /* Taroter.xcdatamodeld */,
+			);
+			path = "Local Storage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,7 +371,7 @@
 			files = (
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
-				1CF0C1D828FA07FF00CAB508 /* ContentView.swift in Sources */,
+				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,10 +530,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Taroter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,10 +560,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Taroter/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = G6NTB33VYZ;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Taroter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
