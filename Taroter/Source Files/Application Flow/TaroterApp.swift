@@ -15,6 +15,7 @@ struct TaroterApp: App {
                 CardsView()
             }
             .navigationViewStyle(.stack)
+            .preferredColorScheme(.dark)
         }
     }
 }
