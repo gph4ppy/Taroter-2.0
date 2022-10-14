@@ -55,6 +55,15 @@ struct CardsView: View {
                                 .resizable()
                                 .scaledToFill()
                                 .frame(height: 200)
+                                .overlay(alignment: .bottom) {
+                                    Color.black.opacity(0.6)
+                                        .frame(height: 44)
+
+                                    Text("The Fool")
+                                        .fontWeight(.semibold)
+                                        .font(.system(size: 14))
+                                        .lineLimit(1)
+                                }
                                 .cornerRadius(24)
                         }
                     }
