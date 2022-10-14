@@ -16,12 +16,13 @@ struct CardsView: View {
                 HomeViewProfileHeader()
 
                 // Cards
-                Text("Major Arcana")
-                    .fontWeight(.bold)
-                    .font(.system(size: 24))
-                    .foregroundColor(.gray)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical)
+                Picker("", selection: .constant("All")) {
+                    Text("Major Arcana")
+                    Text("All")
+                    Text("Minor Arcana")
+                }
+                .pickerStyle(.segmented)
+                .padding(.vertical, 8)
 
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 110), spacing: 20, alignment: .top)], spacing: 20) {
