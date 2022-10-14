@@ -16,6 +16,7 @@
 		1CF0C1ED28FA080500CAB508 /* TaroterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1EC28FA080500CAB508 /* TaroterTests.swift */; };
 		1CF0C1F728FA080500CAB508 /* TaroterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1F628FA080500CAB508 /* TaroterUITests.swift */; };
 		1CF0C1F928FA080500CAB508 /* TaroterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1F828FA080500CAB508 /* TaroterUITestsLaunchTests.swift */; };
+		1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21128FA0BC700CAB508 /* TRColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1CF0C1F228FA080500CAB508 /* TaroterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaroterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1F628FA080500CAB508 /* TaroterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterUITests.swift; sourceTree = "<group>"; };
 		1CF0C1F828FA080500CAB508 /* TaroterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CF0C21128FA0BC700CAB508 /* TRColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C21028FA093600CAB508 /* Local Storage */,
+				1CF0C21128FA0BC700CAB508 /* TRColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,

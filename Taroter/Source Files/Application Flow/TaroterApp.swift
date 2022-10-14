@@ -11,7 +11,10 @@ import SwiftUI
 struct TaroterApp: App {
     var body: some Scene {
         WindowGroup {
-            CardsView()
+            NavigationView {
+                CardsView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }
