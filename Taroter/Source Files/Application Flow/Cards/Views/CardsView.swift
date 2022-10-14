@@ -20,19 +20,7 @@ struct CardsView: View {
 
             VStack(spacing: 14) {
                 // Profile Header
-                HStack(spacing: 16) {
-                    Image(systemName: "person.circle")
-                        .font(.system(size: 60))
-
-                    Text("Hello, Jakub!")
-                        .fontWeight(.semibold)
-
-                    Spacer()
-
-                    Image(systemName: "magnifyingglass")
-                }
-                .font(.system(size: 24))
-                .foregroundColor(TRColor.snow)
+                HomeViewProfileHeader()
 
                 // Cards
                 Text("Major Arcana")

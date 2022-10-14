@@ -17,6 +17,7 @@
 		1CF0C1F728FA080500CAB508 /* TaroterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1F628FA080500CAB508 /* TaroterUITests.swift */; };
 		1CF0C1F928FA080500CAB508 /* TaroterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1F828FA080500CAB508 /* TaroterUITestsLaunchTests.swift */; };
 		1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21128FA0BC700CAB508 /* TRColors.swift */; };
+		1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1CF0C1F628FA080500CAB508 /* TaroterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterUITests.swift; sourceTree = "<group>"; };
 		1CF0C1F828FA080500CAB508 /* TaroterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1CF0C21128FA0BC700CAB508 /* TRColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRColors.swift; sourceTree = "<group>"; };
+		1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProfileHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C1D728FA07FF00CAB508 /* CardsView.swift */,
+				1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
+				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
