@@ -38,7 +38,6 @@ struct CardsView: View {
             VStack(spacing: 14) {
                 HomeViewProfileHeader()
 
-                // Cards
                 Picker("", selection: $viewModel.selectedArcanaSection) {
                     ForEach(ArcanasSections.sortedAllCases, id: \.name) { section in
                         Text(section.name)

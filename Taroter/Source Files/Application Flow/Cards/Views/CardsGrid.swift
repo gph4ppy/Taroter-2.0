@@ -18,7 +18,7 @@ struct CardsGrid: View {
     ]
 
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(0..<100) { _ in
                     Image("The Fool")
