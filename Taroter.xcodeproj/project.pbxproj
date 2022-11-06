@@ -21,6 +21,8 @@
 		1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */; };
 		1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */; };
 		1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF728EE2918392E009DD9AF /* CardsGrid.swift */; };
+		1CF729F729185784009DD9AF /* TaroterSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; };
+		1CF729F829185784009DD9AF /* TaroterSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1CF729F829185784009DD9AF /* TaroterSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		1CF728EE2918392E009DD9AF /* CardsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGrid.swift; sourceTree = "<group>"; };
+		1CF729F629185784009DD9AF /* TaroterSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TaroterSDK.xcframework; path = TaroterSDK/build/TaroterSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF729F729185784009DD9AF /* TaroterSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 				1CF0C1EB28FA080500CAB508 /* TaroterTests */,
 				1CF0C1F528FA080500CAB508 /* TaroterUITests */,
 				1CF0C1D328FA07FF00CAB508 /* Products */,
+				1CF729F529185784009DD9AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -258,6 +264,14 @@
 				1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1CF729F529185784009DD9AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF729F629185784009DD9AF /* TaroterSDK.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
