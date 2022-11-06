@@ -11,8 +11,10 @@
 		1CF729A429183FA0009DD9AF /* TaroterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7299929183F9F009DD9AF /* TaroterSDK.framework */; };
 		1CF729A929183FA0009DD9AF /* TaroterSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */; };
 		1CF729AA29183FA0009DD9AF /* TaroterSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF7299C29183F9F009DD9AF /* TaroterSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF729C8291840EC009DD9AF /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729C7291840EC009DD9AF /* TarotCard.swift */; };
+		1CF729C8291840EC009DD9AF /* TarotCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729C7291840EC009DD9AF /* TarotCards.swift */; };
 		1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729C9291843A9009DD9AF /* Arcana.swift */; };
+		1CF729CD291844EA009DD9AF /* 0-TheFool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729CC291844EA009DD9AF /* 0-TheFool.swift */; };
+		1CF729D029184559009DD9AF /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729CF29184559009DD9AF /* TarotCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +33,10 @@
 		1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TaroterSDK.docc; sourceTree = "<group>"; };
 		1CF729A329183FA0009DD9AF /* TaroterSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaroterSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterSDKTests.swift; sourceTree = "<group>"; };
-		1CF729C7291840EC009DD9AF /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		1CF729C7291840EC009DD9AF /* TarotCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCards.swift; sourceTree = "<group>"; };
 		1CF729C9291843A9009DD9AF /* Arcana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcana.swift; sourceTree = "<group>"; };
+		1CF729CC291844EA009DD9AF /* 0-TheFool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "0-TheFool.swift"; sourceTree = "<group>"; };
+		1CF729CF29184559009DD9AF /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,8 @@
 		1CF729C529184099009DD9AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1CF729C7291840EC009DD9AF /* TarotCard.swift */,
+				1CF729CB291844C5009DD9AF /* Cards */,
+				1CF729C7291840EC009DD9AF /* TarotCards.swift */,
 				1CF729C9291843A9009DD9AF /* Arcana.swift */,
 			);
 			path = Models;
@@ -102,9 +107,26 @@
 		1CF729C6291840A0009DD9AF /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				1CF729CE29184550009DD9AF /* Protocols */,
 				1CF729C529184099009DD9AF /* Models */,
 			);
 			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		1CF729CB291844C5009DD9AF /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				1CF729CC291844EA009DD9AF /* 0-TheFool.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		1CF729CE29184550009DD9AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1CF729CF29184559009DD9AF /* TarotCard.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF729C8291840EC009DD9AF /* TarotCard.swift in Sources */,
+				1CF729CD291844EA009DD9AF /* 0-TheFool.swift in Sources */,
+				1CF729C8291840EC009DD9AF /* TarotCards.swift in Sources */,
 				1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */,
 				1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */,
+				1CF729D029184559009DD9AF /* TarotCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
