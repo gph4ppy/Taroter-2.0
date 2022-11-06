@@ -1,5 +1,5 @@
 //
-//  0-TheFool.swift
+//  1-TheMagicianCard.swift
 //  TaroterSDK
 //
 //  Created by Jakub Dąbrowski on 06/11/2022.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TheFoolCard: TarotCard {
-    var name: String = "The Fool"
+struct TheMagicianCard: TarotCard {
+    var name: String = "The Magician"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""

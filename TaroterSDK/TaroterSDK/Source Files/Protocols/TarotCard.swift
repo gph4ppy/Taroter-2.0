@@ -13,5 +13,6 @@ protocol TarotCard {
     var yesOrNo: String { get }
     var zodiacSign: String { get }
     var numerology: Int { get }
+    var time: String { get }
     var meanings: [String] { get }
 }
