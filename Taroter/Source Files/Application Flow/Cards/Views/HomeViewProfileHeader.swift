@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view used to display user data and the search button on the Home Screen.
 struct HomeViewProfileHeader: View {
     var body: some View {
         HStack(spacing: 16) {

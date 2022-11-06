@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TarotCard {
+public protocol TarotCard {
     var name: String { get }
     var arcana: Arcana { get }
     var yesOrNo: String { get }
@@ -15,4 +15,5 @@ protocol TarotCard {
     var numerology: Int { get }
     var time: String { get }
     var meanings: [String] { get }
+    var id: Int { get }
 }

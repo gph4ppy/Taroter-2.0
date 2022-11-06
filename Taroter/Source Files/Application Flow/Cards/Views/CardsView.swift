@@ -27,7 +27,7 @@ struct CardsView: View {
                 .pickerStyle(.segmented)
                 .padding(.vertical, 8)
 
-                CardsGrid()
+                CardsGrid(displayedArcana: viewModel.selectedArcanaSection)
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding([.horizontal, .top])

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TarotCards: CaseIterable {
+public enum TarotCards: CaseIterable {
     // MARK: - Major Arcana
     case fool
     case magician
@@ -32,7 +32,7 @@ enum TarotCards: CaseIterable {
     case judgement
     case world
 
-    var data: TarotCard {
+    public var data: TarotCard {
         switch self {
         case .fool: return TheFoolCard()
         case .magician: return TheMagicianCard()

@@ -15,4 +15,5 @@ struct TheHighPriestessCard: TarotCard {
     var numerology: Int = 300
     var time: String = ""
     var meanings: [String] = []
+    var id: Int = 2
 }

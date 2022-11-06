@@ -1,3 +1,6 @@
+# Remove current build
+rm -rf build
+
 # iOS
 xcodebuild archive \
 -scheme TaroterSDK \

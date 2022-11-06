@@ -8,5 +8,6 @@
 import TaroterSDK
 
 final class CardsViewModel: ObservableObject {
+    /// A property storing currently selected arcana.
     @Published var selectedArcanaSection: Arcana = .all
 }
