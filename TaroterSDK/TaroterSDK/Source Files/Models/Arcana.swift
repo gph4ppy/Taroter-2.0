@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum Arcana: Int, CaseIterable {
+public enum Arcana: Int, CaseIterable {
     case major = 1
     case minor = 3
     case all = 2
 
-    var name: String {
+    public var name: String {
         switch self {
         case .major:
             return "Major Arcana"
@@ -23,7 +23,7 @@ enum Arcana: Int, CaseIterable {
         }
     }
 
-    static var sortedAllCases: [Arcana] {
+    public static var sortedAllCases: [Arcana] {
         allCases.sorted(by: { $0.rawValue < $1.rawValue })
     }
 }

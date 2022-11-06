@@ -5,8 +5,8 @@
 //  Created by Jakub Dąbrowski on 15/10/2022.
 //
 
-import Foundation
+import TaroterSDK
 
 final class CardsViewModel: ObservableObject {
-    @Published var selectedArcanaSection: CardsView.ArcanasSections = .all
+    @Published var selectedArcanaSection: Arcana = .all
 }
