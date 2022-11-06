@@ -20,6 +20,7 @@
 		1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */; };
 		1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */; };
 		1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */; };
+		1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF728EE2918392E009DD9AF /* CardsGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProfileHeader.swift; sourceTree = "<group>"; };
 		1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		1CF728EE2918392E009DD9AF /* CardsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +188,7 @@
 		1CF0C20C28FA08C400CAB508 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				1CF0C21A28FA18C800CAB508 /* View Models */,
+				1CF0C21A28FA18C800CAB508 /* ViewModels */,
 				1CF0C20D28FA08E400CAB508 /* Views */,
 			);
 			path = Cards;
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C1D728FA07FF00CAB508 /* CardsView.swift */,
+				1CF728EE2918392E009DD9AF /* CardsGrid.swift */,
 				1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */,
 			);
 			path = Views;
@@ -236,12 +239,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1CF0C21A28FA18C800CAB508 /* View Models */ = {
+		1CF0C21A28FA18C800CAB508 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */,
 			);
-			path = "View Models";
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +405,7 @@
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
+				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,

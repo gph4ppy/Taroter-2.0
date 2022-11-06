@@ -48,27 +48,7 @@ struct CardsView: View {
                 .pickerStyle(.segmented)
                 .padding(.vertical, 8)
 
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 110), spacing: 20, alignment: .top)], spacing: 20) {
-                        ForEach(0..<100) { _ in
-                            Image("The Fool")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 200)
-                                .overlay(alignment: .bottom) {
-                                    Color.black.opacity(0.6)
-                                        .frame(height: 44)
-
-                                    Text("The Fool")
-                                        .fontWeight(.semibold)
-                                        .font(.system(size: 14))
-                                        .lineLimit(1)
-                                }
-                                .cornerRadius(24)
-                        }
-                    }
-                }
-                .cornerRadius(24)
+                CardsGrid()
             }
             .frame(maxHeight: .infinity, alignment: .top)
             .padding([.horizontal, .top])
