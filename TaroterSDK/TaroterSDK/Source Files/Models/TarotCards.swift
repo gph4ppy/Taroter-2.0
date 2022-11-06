@@ -35,9 +35,9 @@ enum TarotCards: CaseIterable {
     var data: TarotCard {
         switch self {
         case .fool: return TheFoolCard()
-        case .magician: return TheFoolCard()
-        case .highPriestess: return TheFoolCard()
-        case .empress: return TheFoolCard()
+        case .magician: return TheMagicianCard()
+        case .highPriestess: return TheHighPriestessCard()
+        case .empress: return TheEmpressCard()
         case .emperor: return TheFoolCard()
         case .hierophant: return TheFoolCard()
         case .lovers: return TheFoolCard()

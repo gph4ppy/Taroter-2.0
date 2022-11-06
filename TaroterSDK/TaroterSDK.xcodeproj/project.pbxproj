@@ -17,6 +17,7 @@
 		1CF729D029184559009DD9AF /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729CF29184559009DD9AF /* TarotCard.swift */; };
 		1CF729D229184619009DD9AF /* 1-TheMagician.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729D129184619009DD9AF /* 1-TheMagician.swift */; };
 		1CF729D6291846F9009DD9AF /* 2-TheHighPriestess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729D5291846F9009DD9AF /* 2-TheHighPriestess.swift */; };
+		1CF729D829184730009DD9AF /* 3-TheEmpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729D729184730009DD9AF /* 3-TheEmpress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		1CF729CF29184559009DD9AF /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
 		1CF729D129184619009DD9AF /* 1-TheMagician.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1-TheMagician.swift"; sourceTree = "<group>"; };
 		1CF729D5291846F9009DD9AF /* 2-TheHighPriestess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2-TheHighPriestess.swift"; sourceTree = "<group>"; };
+		1CF729D729184730009DD9AF /* 3-TheEmpress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3-TheEmpress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				1CF729CC291844EA009DD9AF /* 0-TheFool.swift */,
 				1CF729D129184619009DD9AF /* 1-TheMagician.swift */,
 				1CF729D5291846F9009DD9AF /* 2-TheHighPriestess.swift */,
+				1CF729D729184730009DD9AF /* 3-TheEmpress.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				1CF729CD291844EA009DD9AF /* 0-TheFool.swift in Sources */,
 				1CF729C8291840EC009DD9AF /* TarotCards.swift in Sources */,
 				1CF729D229184619009DD9AF /* 1-TheMagician.swift in Sources */,
+				1CF729D829184730009DD9AF /* 3-TheEmpress.swift in Sources */,
 				1CF729D6291846F9009DD9AF /* 2-TheHighPriestess.swift in Sources */,
 				1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */,
 				1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */,
