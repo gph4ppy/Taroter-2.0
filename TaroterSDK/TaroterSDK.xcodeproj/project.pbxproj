@@ -11,6 +11,8 @@
 		1CF729A429183FA0009DD9AF /* TaroterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7299929183F9F009DD9AF /* TaroterSDK.framework */; };
 		1CF729A929183FA0009DD9AF /* TaroterSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */; };
 		1CF729AA29183FA0009DD9AF /* TaroterSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF7299C29183F9F009DD9AF /* TaroterSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF729C8291840EC009DD9AF /* TarotCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729C7291840EC009DD9AF /* TarotCard.swift */; };
+		1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729C9291843A9009DD9AF /* Arcana.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TaroterSDK.docc; sourceTree = "<group>"; };
 		1CF729A329183FA0009DD9AF /* TaroterSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaroterSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterSDKTests.swift; sourceTree = "<group>"; };
+		1CF729C7291840EC009DD9AF /* TarotCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotCard.swift; sourceTree = "<group>"; };
+		1CF729C9291843A9009DD9AF /* Arcana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arcana.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				1CF7299B29183F9F009DD9AF /* TaroterSDK */,
-				1CF729A729183FA0009DD9AF /* TaroterSDKTests */,
 				1CF7299A29183F9F009DD9AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +74,10 @@
 		1CF7299B29183F9F009DD9AF /* TaroterSDK */ = {
 			isa = PBXGroup;
 			children = (
+				1CF729C6291840A0009DD9AF /* Source Files */,
 				1CF7299C29183F9F009DD9AF /* TaroterSDK.h */,
 				1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */,
+				1CF729A729183FA0009DD9AF /* TaroterSDKTests */,
 			);
 			path = TaroterSDK;
 			sourceTree = "<group>";
@@ -83,6 +88,23 @@
 				1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */,
 			);
 			path = TaroterSDKTests;
+			sourceTree = "<group>";
+		};
+		1CF729C529184099009DD9AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CF729C7291840EC009DD9AF /* TarotCard.swift */,
+				1CF729C9291843A9009DD9AF /* Arcana.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CF729C6291840A0009DD9AF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CF729C529184099009DD9AF /* Models */,
+			);
+			path = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF729C8291840EC009DD9AF /* TarotCard.swift in Sources */,
 				1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */,
+				1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +422,7 @@
 		1CF729B129183FA0009DD9AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -415,6 +440,7 @@
 		1CF729B229183FA0009DD9AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
