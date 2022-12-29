@@ -15,5 +15,5 @@ struct TheLoversCard: TarotCard {
     var numerology: Int = 300
     var time: String = ""
     var meanings: Meanings = (positive: [], negative: [])
-    var id: Int = 2
+    var id: Int = 6
 }
