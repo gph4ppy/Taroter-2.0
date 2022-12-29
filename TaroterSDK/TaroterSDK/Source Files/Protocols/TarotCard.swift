@@ -7,6 +7,8 @@
 
 import Foundation
 
+public typealias Meanings = (positive: [String], negative: [String])
+
 public protocol TarotCard {
     var name: String { get }
     var arcana: Arcana { get }
@@ -14,6 +16,6 @@ public protocol TarotCard {
     var zodiacSign: String { get }
     var numerology: Int { get }
     var time: String { get }
-    var meanings: [String] { get }
+    var meanings: Meanings { get }
     var id: Int { get }
 }

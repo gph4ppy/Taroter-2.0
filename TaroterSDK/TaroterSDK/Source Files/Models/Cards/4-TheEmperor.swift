@@ -1,19 +1,19 @@
 //
-//  0-TheFool.swift
+//  4-TheEmperor.swift
 //  TaroterSDK
 //
-//  Created by Jakub Dąbrowski on 06/11/2022.
+//  Created by Jakub Dąbrowski on 29/12/2022.
 //
 
 import Foundation
 
-struct TheFoolCard: TarotCard {
-    var name: String = "The Fool"
+struct TheEmperorCard: TarotCard {
+    var name: String = "The Emperor"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
     var meanings: Meanings = (positive: [], negative: [])
-    var id: Int = 0
+    var id: Int = 3
 }

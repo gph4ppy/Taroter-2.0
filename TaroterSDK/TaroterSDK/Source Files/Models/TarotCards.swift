@@ -38,7 +38,7 @@ public enum TarotCards: CaseIterable {
         case .magician: return TheMagicianCard()
         case .highPriestess: return TheHighPriestessCard()
         case .empress: return TheEmpressCard()
-        case .emperor: return TheFoolCard()
+        case .emperor: return TheEmperorCard()
         case .hierophant: return TheFoolCard()
         case .lovers: return TheFoolCard()
         case .chariot: return TheFoolCard()

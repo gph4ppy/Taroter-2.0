@@ -14,6 +14,6 @@ struct TheEmpressCard: TarotCard {
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
-    var meanings: [String] = []
+    var meanings: Meanings = (positive: [], negative: [])
     var id: Int = 3
 }
