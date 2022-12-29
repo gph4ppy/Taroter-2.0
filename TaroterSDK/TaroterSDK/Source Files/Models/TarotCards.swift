@@ -44,7 +44,7 @@ public enum TarotCards: CaseIterable {
         case .chariot: return TheChariotCard()
         case .strenght: return TheStrenghtCard()
         case .hermit: return TheHermitCard()
-        case .wheelOfFortune: return TheFoolCard()
+        case .wheelOfFortune: return WheelOfFortuneCard()
         case .justice: return TheFoolCard()
         case .hangedMan: return TheFoolCard()
         case .death: return TheFoolCard()
