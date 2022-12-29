@@ -1,5 +1,5 @@
 //
-//  8-Strength
+//  13-Death.swift
 //  TaroterSDK
 //
 //  Created by Jakub Dąbrowski on 29/12/2022.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct StrengthCard: TarotCard {
-    var name: String = "Strength"
+struct DeathCard: TarotCard {
+    var name: String = "Death"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
     var meanings: Meanings = (positive: [], negative: [])
-    var id: Int = 8
+    var id: Int = 13
 }
