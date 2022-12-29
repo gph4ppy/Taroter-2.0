@@ -12,7 +12,10 @@ struct TaroterApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                CardsView(viewModel: CardsViewModel())
+                ZStack {
+                    TRColor.blackPearl.ignoresSafeArea()  
+                    CardsView(viewModel: CardsViewModel())
+                }
             }
             .navigationViewStyle(.stack)
             .preferredColorScheme(.dark)
