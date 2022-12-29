@@ -11,10 +11,11 @@
 		1CB4C9C8295E27F700414E41 /* 5-TheHierophant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9C7295E27F700414E41 /* 5-TheHierophant.swift */; };
 		1CB4C9CA295E282A00414E41 /* 6-TheLovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9C9295E282A00414E41 /* 6-TheLovers.swift */; };
 		1CB4C9CC295E285A00414E41 /* 7-TheChariot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9CB295E285A00414E41 /* 7-TheChariot.swift */; };
-		1CB4C9CE295E28A900414E41 /* 8-TheStrenght.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9CD295E28A900414E41 /* 8-TheStrenght.swift */; };
+		1CB4C9CE295E28A900414E41 /* 8-Strenght.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9CD295E28A900414E41 /* 8-Strenght.swift */; };
 		1CB4C9D0295E28E600414E41 /* 9-TheHermit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9CF295E28E600414E41 /* 9-TheHermit.swift */; };
 		1CB4C9D3295E294600414E41 /* 10-WheelOfFortune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9D2295E294600414E41 /* 10-WheelOfFortune.swift */; };
 		1CB4C9D5295E2A4D00414E41 /* 11-TheJustice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9D4295E2A4D00414E41 /* 11-TheJustice.swift */; };
+		1CB4C9D7295E2C3E00414E41 /* 12-TheHangedMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4C9D6295E2C3E00414E41 /* 12-TheHangedMan.swift */; };
 		1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */; };
 		1CF729A429183FA0009DD9AF /* TaroterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7299929183F9F009DD9AF /* TaroterSDK.framework */; };
 		1CF729A929183FA0009DD9AF /* TaroterSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */; };
@@ -43,10 +44,11 @@
 		1CB4C9C7295E27F700414E41 /* 5-TheHierophant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5-TheHierophant.swift"; sourceTree = "<group>"; };
 		1CB4C9C9295E282A00414E41 /* 6-TheLovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6-TheLovers.swift"; sourceTree = "<group>"; };
 		1CB4C9CB295E285A00414E41 /* 7-TheChariot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7-TheChariot.swift"; sourceTree = "<group>"; };
-		1CB4C9CD295E28A900414E41 /* 8-TheStrenght.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8-TheStrenght.swift"; sourceTree = "<group>"; };
+		1CB4C9CD295E28A900414E41 /* 8-Strenght.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8-Strenght.swift"; sourceTree = "<group>"; };
 		1CB4C9CF295E28E600414E41 /* 9-TheHermit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9-TheHermit.swift"; sourceTree = "<group>"; };
 		1CB4C9D2295E294600414E41 /* 10-WheelOfFortune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10-WheelOfFortune.swift"; sourceTree = "<group>"; };
 		1CB4C9D4295E2A4D00414E41 /* 11-TheJustice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11-TheJustice.swift"; sourceTree = "<group>"; };
+		1CB4C9D6295E2C3E00414E41 /* 12-TheHangedMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12-TheHangedMan.swift"; sourceTree = "<group>"; };
 		1CF7299929183F9F009DD9AF /* TaroterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaroterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7299C29183F9F009DD9AF /* TaroterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaroterSDK.h; sourceTree = "<group>"; };
 		1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TaroterSDK.docc; sourceTree = "<group>"; };
@@ -91,10 +93,11 @@
 				1CB4C9C7295E27F700414E41 /* 5-TheHierophant.swift */,
 				1CB4C9C9295E282A00414E41 /* 6-TheLovers.swift */,
 				1CB4C9CB295E285A00414E41 /* 7-TheChariot.swift */,
-				1CB4C9CD295E28A900414E41 /* 8-TheStrenght.swift */,
+				1CB4C9CD295E28A900414E41 /* 8-Strenght.swift */,
 				1CB4C9CF295E28E600414E41 /* 9-TheHermit.swift */,
 				1CB4C9D2295E294600414E41 /* 10-WheelOfFortune.swift */,
 				1CB4C9D4295E2A4D00414E41 /* 11-TheJustice.swift */,
+				1CB4C9D6295E2C3E00414E41 /* 12-TheHangedMan.swift */,
 			);
 			path = "Major Arcana";
 			sourceTree = "<group>";
@@ -289,9 +292,10 @@
 				1CB4C9C8295E27F700414E41 /* 5-TheHierophant.swift in Sources */,
 				1CF729D229184619009DD9AF /* 1-TheMagician.swift in Sources */,
 				1CB4C9D3295E294600414E41 /* 10-WheelOfFortune.swift in Sources */,
+				1CB4C9D7295E2C3E00414E41 /* 12-TheHangedMan.swift in Sources */,
 				1CF729D829184730009DD9AF /* 3-TheEmpress.swift in Sources */,
 				1CF729D6291846F9009DD9AF /* 2-TheHighPriestess.swift in Sources */,
-				1CB4C9CE295E28A900414E41 /* 8-TheStrenght.swift in Sources */,
+				1CB4C9CE295E28A900414E41 /* 8-Strenght.swift in Sources */,
 				1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */,
 				1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */,
 				1CF729D029184559009DD9AF /* TarotCard.swift in Sources */,

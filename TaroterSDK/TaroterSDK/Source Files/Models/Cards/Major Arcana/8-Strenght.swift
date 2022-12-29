@@ -1,5 +1,5 @@
 //
-//  8-TheStrenght
+//  8-Strenght
 //  TaroterSDK
 //
 //  Created by Jakub Dąbrowski on 29/12/2022.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TheStrenghtCard: TarotCard {
-    var name: String = "The Strenght"
+struct StrenghtCard: TarotCard {
+    var name: String = "Strenght"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""

@@ -1,5 +1,5 @@
 //
-//  11-Justice.swift
+//  12-TheHangedMan.swift
 //  TaroterSDK
 //
 //  Created by Jakub Dąbrowski on 29/12/2022.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct JusticeCard: TarotCard {
-    var name: String = "Justice"
+struct TheHangedManCard: TarotCard {
+    var name: String = "The Hanged Man"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
     var meanings: Meanings = (positive: [], negative: [])
-    var id: Int = 11
+    var id: Int = 12
 }
