@@ -20,6 +20,8 @@
 		1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */; };
 		1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */; };
 		1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */; };
+		1CF26D7F297B39F500B3AFC8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D7E297B39F500B3AFC8 /* SearchView.swift */; };
+		1CF26D81297B39FF00B3AFC8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D80297B39FF00B3AFC8 /* SearchViewModel.swift */; };
 		1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF728EE2918392E009DD9AF /* CardsGrid.swift */; };
 		1CF729F729185784009DD9AF /* TaroterSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; };
 		1CF729F829185784009DD9AF /* TaroterSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,6 +76,8 @@
 		1CF0C21528FA16C900CAB508 /* HomeViewProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProfileHeader.swift; sourceTree = "<group>"; };
 		1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
 		1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		1CF26D7E297B39F500B3AFC8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1CF26D80297B39FF00B3AFC8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1CF728EE2918392E009DD9AF /* CardsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGrid.swift; sourceTree = "<group>"; };
 		1CF729F629185784009DD9AF /* TaroterSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TaroterSDK.xcframework; path = TaroterSDK/build/TaroterSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C20728FA089300CAB508 /* Source Files */,
+				1CF0C20A28FA08B200CAB508 /* Application Flow */,
 				1CF0C20828FA089C00CAB508 /* Supporting Files */,
 				1CF0C20928FA08A200CAB508 /* Resources */,
 			);
@@ -165,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C20E28FA092B00CAB508 /* Common */,
-				1CF0C20A28FA08B200CAB508 /* Application Flow */,
 			);
 			path = "Source Files";
 			sourceTree = "<group>";
@@ -193,6 +197,7 @@
 				1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */,
 				1CF0C20B28FA08BC00CAB508 /* Onboarding */,
 				1CF0C20C28FA08C400CAB508 /* Cards */,
+				1CF26D7B297B390E00B3AFC8 /* Search */,
 			);
 			path = "Application Flow";
 			sourceTree = "<group>";
@@ -262,6 +267,31 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C21B28FA18D600CAB508 /* CardsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1CF26D7B297B390E00B3AFC8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D7D297B394000B3AFC8 /* ViewModels */,
+				1CF26D7C297B393C00B3AFC8 /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		1CF26D7C297B393C00B3AFC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D7E297B39F500B3AFC8 /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CF26D7D297B394000B3AFC8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D80297B39FF00B3AFC8 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -428,6 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF26D81297B39FF00B3AFC8 /* SearchViewModel.swift in Sources */,
+				1CF26D7F297B39F500B3AFC8 /* SearchView.swift in Sources */,
 				1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */,
 				1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */,
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
