@@ -49,7 +49,7 @@ public enum TarotCards: CaseIterable {
         case .hangedMan: return TheHangedManCard()
         case .death: return DeathCard()
         case .temperance: return TemperanceCard()
-        case .devil: return TheFoolCard()
+        case .devil: return TheDevilCard()
         case .tower: return TheFoolCard()
         case .star: return TheFoolCard()
         case .moon: return TheFoolCard()
