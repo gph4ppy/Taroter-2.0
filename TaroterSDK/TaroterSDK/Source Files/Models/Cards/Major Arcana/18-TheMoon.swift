@@ -1,5 +1,5 @@
 //
-//  17-TheStar.swift
+//  18-TheMoon.swift
 //  TaroterSDK
 //
 //  Created by Jakub Dąbrowski on 20/01/2023.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct TheStarCard: TarotCard {
-    var name: String = "The Star"
+struct TheMoonCard: TarotCard {
+    var name: String = "The Moon"
     var arcana: Arcana = .major
     var yesOrNo: String = "Yes"
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
     var meanings: Meanings = (positive: [], negative: [])
-    var id: Int = 17
+    var id: Int = 18
 }
