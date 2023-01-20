@@ -25,6 +25,62 @@
 		1CF26D00297B241900B3AFC8 /* 19-TheSun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26CFF297B241900B3AFC8 /* 19-TheSun.swift */; };
 		1CF26D02297B245E00B3AFC8 /* 20-Judgement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D01297B245E00B3AFC8 /* 20-Judgement.swift */; };
 		1CF26D04297B24C700B3AFC8 /* 21-TheWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D03297B24C700B3AFC8 /* 21-TheWorld.swift */; };
+		1CF26D08297B27F600B3AFC8 /* 22-AceOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D07297B27F600B3AFC8 /* 22-AceOfWands.swift */; };
+		1CF26D0A297B281C00B3AFC8 /* 23-TwoOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D09297B281C00B3AFC8 /* 23-TwoOfWands.swift */; };
+		1CF26D0C297B283100B3AFC8 /* 24-ThreeOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D0B297B283100B3AFC8 /* 24-ThreeOfWands.swift */; };
+		1CF26D0E297B28C000B3AFC8 /* 25-FourOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D0D297B28C000B3AFC8 /* 25-FourOfWands.swift */; };
+		1CF26D10297B28D200B3AFC8 /* 26-FiveOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D0F297B28D200B3AFC8 /* 26-FiveOfWands.swift */; };
+		1CF26D12297B28E700B3AFC8 /* 27-SixOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D11297B28E700B3AFC8 /* 27-SixOfWands.swift */; };
+		1CF26D14297B2B2300B3AFC8 /* 28-SevenOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D13297B2B2300B3AFC8 /* 28-SevenOfWands.swift */; };
+		1CF26D16297B2B5600B3AFC8 /* 29-EightOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D15297B2B5500B3AFC8 /* 29-EightOfWands.swift */; };
+		1CF26D18297B2B6900B3AFC8 /* 30-NineOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D17297B2B6900B3AFC8 /* 30-NineOfWands.swift */; };
+		1CF26D1A297B2B8300B3AFC8 /* 31-TenOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D19297B2B8300B3AFC8 /* 31-TenOfWands.swift */; };
+		1CF26D1C297B2B9B00B3AFC8 /* 32-PageOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D1B297B2B9B00B3AFC8 /* 32-PageOfWands.swift */; };
+		1CF26D1E297B2BAE00B3AFC8 /* 33-KnightOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D1D297B2BAE00B3AFC8 /* 33-KnightOfWands.swift */; };
+		1CF26D20297B2BBB00B3AFC8 /* 34-QueenOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D1F297B2BBB00B3AFC8 /* 34-QueenOfWands.swift */; };
+		1CF26D22297B2BFD00B3AFC8 /* 35-KingOfWands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D21297B2BFD00B3AFC8 /* 35-KingOfWands.swift */; };
+		1CF26D32297B2EDD00B3AFC8 /* 42-SevenOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D24297B2EDD00B3AFC8 /* 42-SevenOfPentacles.swift */; };
+		1CF26D33297B2EDD00B3AFC8 /* 48-QueenOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D25297B2EDD00B3AFC8 /* 48-QueenOfPentacles.swift */; };
+		1CF26D34297B2EDD00B3AFC8 /* 44-NineOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D26297B2EDD00B3AFC8 /* 44-NineOfPentacles.swift */; };
+		1CF26D35297B2EDD00B3AFC8 /* 47-KnightOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D27297B2EDD00B3AFC8 /* 47-KnightOfPentacles.swift */; };
+		1CF26D36297B2EDD00B3AFC8 /* 37-TwoOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D28297B2EDD00B3AFC8 /* 37-TwoOfPentacles.swift */; };
+		1CF26D37297B2EDD00B3AFC8 /* 39-FourOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D29297B2EDD00B3AFC8 /* 39-FourOfPentacles.swift */; };
+		1CF26D38297B2EDD00B3AFC8 /* 38-ThreeOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2A297B2EDD00B3AFC8 /* 38-ThreeOfPentacles.swift */; };
+		1CF26D39297B2EDD00B3AFC8 /* 43-EightOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2B297B2EDD00B3AFC8 /* 43-EightOfPentacles.swift */; };
+		1CF26D3A297B2EDD00B3AFC8 /* 40-FiveOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2C297B2EDD00B3AFC8 /* 40-FiveOfPentacles.swift */; };
+		1CF26D3B297B2EDD00B3AFC8 /* 36-AceOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2D297B2EDD00B3AFC8 /* 36-AceOfPentacles.swift */; };
+		1CF26D3C297B2EDD00B3AFC8 /* 41-SixOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2E297B2EDD00B3AFC8 /* 41-SixOfPentacles.swift */; };
+		1CF26D3D297B2EDD00B3AFC8 /* 49-KingOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D2F297B2EDD00B3AFC8 /* 49-KingOfPentacles.swift */; };
+		1CF26D3E297B2EDD00B3AFC8 /* 45-TenOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D30297B2EDD00B3AFC8 /* 45-TenOfPentacles.swift */; };
+		1CF26D3F297B2EDD00B3AFC8 /* 46-PageOfPentacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D31297B2EDD00B3AFC8 /* 46-PageOfPentacles.swift */; };
+		1CF26D5F297B342300B3AFC8 /* 66-ThreeOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D42297B342300B3AFC8 /* 66-ThreeOfSwords.swift */; };
+		1CF26D60297B342300B3AFC8 /* 65-TwoOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D43297B342300B3AFC8 /* 65-TwoOfSwords.swift */; };
+		1CF26D61297B342300B3AFC8 /* 74-PageOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D44297B342300B3AFC8 /* 74-PageOfSwords.swift */; };
+		1CF26D62297B342300B3AFC8 /* 72-NineOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D45297B342300B3AFC8 /* 72-NineOfSwords.swift */; };
+		1CF26D63297B342300B3AFC8 /* 70-SevenOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D46297B342300B3AFC8 /* 70-SevenOfSwords.swift */; };
+		1CF26D64297B342300B3AFC8 /* 77-KingOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D47297B342300B3AFC8 /* 77-KingOfSwords.swift */; };
+		1CF26D65297B342300B3AFC8 /* 76-QueenOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D48297B342300B3AFC8 /* 76-QueenOfSwords.swift */; };
+		1CF26D66297B342300B3AFC8 /* 68-FiveOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D49297B342300B3AFC8 /* 68-FiveOfSwords.swift */; };
+		1CF26D67297B342300B3AFC8 /* 67-FourOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4A297B342300B3AFC8 /* 67-FourOfSwords.swift */; };
+		1CF26D68297B342300B3AFC8 /* 73-TenOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4B297B342300B3AFC8 /* 73-TenOfSwords.swift */; };
+		1CF26D69297B342300B3AFC8 /* 75-KnightOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4C297B342300B3AFC8 /* 75-KnightOfSwords.swift */; };
+		1CF26D6A297B342300B3AFC8 /* 64-AceOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4D297B342300B3AFC8 /* 64-AceOfSwords.swift */; };
+		1CF26D6B297B342300B3AFC8 /* 69-SixOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4E297B342300B3AFC8 /* 69-SixOfSwords.swift */; };
+		1CF26D6C297B342300B3AFC8 /* 71-EightOfSwords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D4F297B342300B3AFC8 /* 71-EightOfSwords.swift */; };
+		1CF26D6D297B342300B3AFC8 /* 59-TenOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D51297B342300B3AFC8 /* 59-TenOfCups.swift */; };
+		1CF26D6E297B342300B3AFC8 /* 53-FourOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D52297B342300B3AFC8 /* 53-FourOfCups.swift */; };
+		1CF26D6F297B342300B3AFC8 /* 61-KnightOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D53297B342300B3AFC8 /* 61-KnightOfCups.swift */; };
+		1CF26D70297B342300B3AFC8 /* 62-QueenOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D54297B342300B3AFC8 /* 62-QueenOfCups.swift */; };
+		1CF26D71297B342300B3AFC8 /* 52-ThreeOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D55297B342300B3AFC8 /* 52-ThreeOfCups.swift */; };
+		1CF26D72297B342300B3AFC8 /* 63-KingOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D56297B342300B3AFC8 /* 63-KingOfCups.swift */; };
+		1CF26D73297B342300B3AFC8 /* 57-EightOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D57297B342300B3AFC8 /* 57-EightOfCups.swift */; };
+		1CF26D74297B342300B3AFC8 /* 54-FiveOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D58297B342300B3AFC8 /* 54-FiveOfCups.swift */; };
+		1CF26D75297B342300B3AFC8 /* 50-AceOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D59297B342300B3AFC8 /* 50-AceOfCups.swift */; };
+		1CF26D76297B342300B3AFC8 /* 58-NineOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D5A297B342300B3AFC8 /* 58-NineOfCups.swift */; };
+		1CF26D77297B342300B3AFC8 /* 60-PageOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D5B297B342300B3AFC8 /* 60-PageOfCups.swift */; };
+		1CF26D78297B342300B3AFC8 /* 51-TwoOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D5C297B342300B3AFC8 /* 51-TwoOfCups.swift */; };
+		1CF26D79297B342300B3AFC8 /* 55-SixOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D5D297B342300B3AFC8 /* 55-SixOfCups.swift */; };
+		1CF26D7A297B342300B3AFC8 /* 56-SevenOfCups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D5E297B342300B3AFC8 /* 56-SevenOfCups.swift */; };
 		1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */; };
 		1CF729A429183FA0009DD9AF /* TaroterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7299929183F9F009DD9AF /* TaroterSDK.framework */; };
 		1CF729A929183FA0009DD9AF /* TaroterSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */; };
@@ -67,6 +123,62 @@
 		1CF26CFF297B241900B3AFC8 /* 19-TheSun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19-TheSun.swift"; sourceTree = "<group>"; };
 		1CF26D01297B245E00B3AFC8 /* 20-Judgement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20-Judgement.swift"; sourceTree = "<group>"; };
 		1CF26D03297B24C700B3AFC8 /* 21-TheWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21-TheWorld.swift"; sourceTree = "<group>"; };
+		1CF26D07297B27F600B3AFC8 /* 22-AceOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "22-AceOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D09297B281C00B3AFC8 /* 23-TwoOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "23-TwoOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D0B297B283100B3AFC8 /* 24-ThreeOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24-ThreeOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D0D297B28C000B3AFC8 /* 25-FourOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "25-FourOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D0F297B28D200B3AFC8 /* 26-FiveOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "26-FiveOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D11297B28E700B3AFC8 /* 27-SixOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27-SixOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D13297B2B2300B3AFC8 /* 28-SevenOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28-SevenOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D15297B2B5500B3AFC8 /* 29-EightOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "29-EightOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D17297B2B6900B3AFC8 /* 30-NineOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "30-NineOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D19297B2B8300B3AFC8 /* 31-TenOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "31-TenOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D1B297B2B9B00B3AFC8 /* 32-PageOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "32-PageOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D1D297B2BAE00B3AFC8 /* 33-KnightOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "33-KnightOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D1F297B2BBB00B3AFC8 /* 34-QueenOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "34-QueenOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D21297B2BFD00B3AFC8 /* 35-KingOfWands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "35-KingOfWands.swift"; sourceTree = "<group>"; };
+		1CF26D24297B2EDD00B3AFC8 /* 42-SevenOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "42-SevenOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D25297B2EDD00B3AFC8 /* 48-QueenOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "48-QueenOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D26297B2EDD00B3AFC8 /* 44-NineOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "44-NineOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D27297B2EDD00B3AFC8 /* 47-KnightOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "47-KnightOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D28297B2EDD00B3AFC8 /* 37-TwoOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "37-TwoOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D29297B2EDD00B3AFC8 /* 39-FourOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "39-FourOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2A297B2EDD00B3AFC8 /* 38-ThreeOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "38-ThreeOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2B297B2EDD00B3AFC8 /* 43-EightOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "43-EightOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2C297B2EDD00B3AFC8 /* 40-FiveOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "40-FiveOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2D297B2EDD00B3AFC8 /* 36-AceOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "36-AceOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2E297B2EDD00B3AFC8 /* 41-SixOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "41-SixOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D2F297B2EDD00B3AFC8 /* 49-KingOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "49-KingOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D30297B2EDD00B3AFC8 /* 45-TenOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "45-TenOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D31297B2EDD00B3AFC8 /* 46-PageOfPentacles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "46-PageOfPentacles.swift"; sourceTree = "<group>"; };
+		1CF26D42297B342300B3AFC8 /* 66-ThreeOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "66-ThreeOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D43297B342300B3AFC8 /* 65-TwoOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "65-TwoOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D44297B342300B3AFC8 /* 74-PageOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "74-PageOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D45297B342300B3AFC8 /* 72-NineOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "72-NineOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D46297B342300B3AFC8 /* 70-SevenOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "70-SevenOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D47297B342300B3AFC8 /* 77-KingOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "77-KingOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D48297B342300B3AFC8 /* 76-QueenOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "76-QueenOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D49297B342300B3AFC8 /* 68-FiveOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "68-FiveOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4A297B342300B3AFC8 /* 67-FourOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "67-FourOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4B297B342300B3AFC8 /* 73-TenOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "73-TenOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4C297B342300B3AFC8 /* 75-KnightOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "75-KnightOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4D297B342300B3AFC8 /* 64-AceOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "64-AceOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4E297B342300B3AFC8 /* 69-SixOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "69-SixOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D4F297B342300B3AFC8 /* 71-EightOfSwords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "71-EightOfSwords.swift"; sourceTree = "<group>"; };
+		1CF26D51297B342300B3AFC8 /* 59-TenOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "59-TenOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D52297B342300B3AFC8 /* 53-FourOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "53-FourOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D53297B342300B3AFC8 /* 61-KnightOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "61-KnightOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D54297B342300B3AFC8 /* 62-QueenOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "62-QueenOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D55297B342300B3AFC8 /* 52-ThreeOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "52-ThreeOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D56297B342300B3AFC8 /* 63-KingOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "63-KingOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D57297B342300B3AFC8 /* 57-EightOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "57-EightOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D58297B342300B3AFC8 /* 54-FiveOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "54-FiveOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D59297B342300B3AFC8 /* 50-AceOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "50-AceOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D5A297B342300B3AFC8 /* 58-NineOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "58-NineOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D5B297B342300B3AFC8 /* 60-PageOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "60-PageOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D5C297B342300B3AFC8 /* 51-TwoOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "51-TwoOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D5D297B342300B3AFC8 /* 55-SixOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "55-SixOfCups.swift"; sourceTree = "<group>"; };
+		1CF26D5E297B342300B3AFC8 /* 56-SevenOfCups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "56-SevenOfCups.swift"; sourceTree = "<group>"; };
 		1CF7299929183F9F009DD9AF /* TaroterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaroterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7299C29183F9F009DD9AF /* TaroterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaroterSDK.h; sourceTree = "<group>"; };
 		1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TaroterSDK.docc; sourceTree = "<group>"; };
@@ -129,6 +241,101 @@
 			path = "Major Arcana";
 			sourceTree = "<group>";
 		};
+		1CF26D05297B27C300B3AFC8 /* Minor Arcana */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D06297B27CD00B3AFC8 /* Wands */,
+				1CF26D23297B2EDD00B3AFC8 /* Pentacles */,
+				1CF26D50297B342300B3AFC8 /* Cups */,
+				1CF26D41297B342300B3AFC8 /* Swords */,
+			);
+			path = "Minor Arcana";
+			sourceTree = "<group>";
+		};
+		1CF26D06297B27CD00B3AFC8 /* Wands */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D07297B27F600B3AFC8 /* 22-AceOfWands.swift */,
+				1CF26D09297B281C00B3AFC8 /* 23-TwoOfWands.swift */,
+				1CF26D0B297B283100B3AFC8 /* 24-ThreeOfWands.swift */,
+				1CF26D0D297B28C000B3AFC8 /* 25-FourOfWands.swift */,
+				1CF26D0F297B28D200B3AFC8 /* 26-FiveOfWands.swift */,
+				1CF26D11297B28E700B3AFC8 /* 27-SixOfWands.swift */,
+				1CF26D13297B2B2300B3AFC8 /* 28-SevenOfWands.swift */,
+				1CF26D15297B2B5500B3AFC8 /* 29-EightOfWands.swift */,
+				1CF26D17297B2B6900B3AFC8 /* 30-NineOfWands.swift */,
+				1CF26D19297B2B8300B3AFC8 /* 31-TenOfWands.swift */,
+				1CF26D1B297B2B9B00B3AFC8 /* 32-PageOfWands.swift */,
+				1CF26D1D297B2BAE00B3AFC8 /* 33-KnightOfWands.swift */,
+				1CF26D1F297B2BBB00B3AFC8 /* 34-QueenOfWands.swift */,
+				1CF26D21297B2BFD00B3AFC8 /* 35-KingOfWands.swift */,
+			);
+			path = Wands;
+			sourceTree = "<group>";
+		};
+		1CF26D23297B2EDD00B3AFC8 /* Pentacles */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D2D297B2EDD00B3AFC8 /* 36-AceOfPentacles.swift */,
+				1CF26D28297B2EDD00B3AFC8 /* 37-TwoOfPentacles.swift */,
+				1CF26D2A297B2EDD00B3AFC8 /* 38-ThreeOfPentacles.swift */,
+				1CF26D29297B2EDD00B3AFC8 /* 39-FourOfPentacles.swift */,
+				1CF26D2C297B2EDD00B3AFC8 /* 40-FiveOfPentacles.swift */,
+				1CF26D2E297B2EDD00B3AFC8 /* 41-SixOfPentacles.swift */,
+				1CF26D24297B2EDD00B3AFC8 /* 42-SevenOfPentacles.swift */,
+				1CF26D2B297B2EDD00B3AFC8 /* 43-EightOfPentacles.swift */,
+				1CF26D26297B2EDD00B3AFC8 /* 44-NineOfPentacles.swift */,
+				1CF26D30297B2EDD00B3AFC8 /* 45-TenOfPentacles.swift */,
+				1CF26D31297B2EDD00B3AFC8 /* 46-PageOfPentacles.swift */,
+				1CF26D27297B2EDD00B3AFC8 /* 47-KnightOfPentacles.swift */,
+				1CF26D25297B2EDD00B3AFC8 /* 48-QueenOfPentacles.swift */,
+				1CF26D2F297B2EDD00B3AFC8 /* 49-KingOfPentacles.swift */,
+			);
+			path = Pentacles;
+			sourceTree = "<group>";
+		};
+		1CF26D41297B342300B3AFC8 /* Swords */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D4D297B342300B3AFC8 /* 64-AceOfSwords.swift */,
+				1CF26D43297B342300B3AFC8 /* 65-TwoOfSwords.swift */,
+				1CF26D42297B342300B3AFC8 /* 66-ThreeOfSwords.swift */,
+				1CF26D4A297B342300B3AFC8 /* 67-FourOfSwords.swift */,
+				1CF26D49297B342300B3AFC8 /* 68-FiveOfSwords.swift */,
+				1CF26D4E297B342300B3AFC8 /* 69-SixOfSwords.swift */,
+				1CF26D46297B342300B3AFC8 /* 70-SevenOfSwords.swift */,
+				1CF26D4F297B342300B3AFC8 /* 71-EightOfSwords.swift */,
+				1CF26D45297B342300B3AFC8 /* 72-NineOfSwords.swift */,
+				1CF26D4B297B342300B3AFC8 /* 73-TenOfSwords.swift */,
+				1CF26D44297B342300B3AFC8 /* 74-PageOfSwords.swift */,
+				1CF26D4C297B342300B3AFC8 /* 75-KnightOfSwords.swift */,
+				1CF26D48297B342300B3AFC8 /* 76-QueenOfSwords.swift */,
+				1CF26D47297B342300B3AFC8 /* 77-KingOfSwords.swift */,
+			);
+			path = Swords;
+			sourceTree = "<group>";
+		};
+		1CF26D50297B342300B3AFC8 /* Cups */ = {
+			isa = PBXGroup;
+			children = (
+				1CF26D59297B342300B3AFC8 /* 50-AceOfCups.swift */,
+				1CF26D5C297B342300B3AFC8 /* 51-TwoOfCups.swift */,
+				1CF26D55297B342300B3AFC8 /* 52-ThreeOfCups.swift */,
+				1CF26D52297B342300B3AFC8 /* 53-FourOfCups.swift */,
+				1CF26D58297B342300B3AFC8 /* 54-FiveOfCups.swift */,
+				1CF26D5D297B342300B3AFC8 /* 55-SixOfCups.swift */,
+				1CF26D5E297B342300B3AFC8 /* 56-SevenOfCups.swift */,
+				1CF26D57297B342300B3AFC8 /* 57-EightOfCups.swift */,
+				1CF26D5A297B342300B3AFC8 /* 58-NineOfCups.swift */,
+				1CF26D51297B342300B3AFC8 /* 59-TenOfCups.swift */,
+				1CF26D5B297B342300B3AFC8 /* 60-PageOfCups.swift */,
+				1CF26D53297B342300B3AFC8 /* 61-KnightOfCups.swift */,
+				1CF26D54297B342300B3AFC8 /* 62-QueenOfCups.swift */,
+				1CF26D56297B342300B3AFC8 /* 63-KingOfCups.swift */,
+			);
+			path = Cups;
+			sourceTree = "<group>";
+		};
 		1CF7298F29183F9F009DD9AF = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +375,9 @@
 		1CF729C529184099009DD9AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1CF729CB291844C5009DD9AF /* Cards */,
 				1CF729C7291840EC009DD9AF /* TarotCards.swift */,
 				1CF729C9291843A9009DD9AF /* Arcana.swift */,
+				1CF729CB291844C5009DD9AF /* Cards */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB4C9D1295E28F200414E41 /* Major Arcana */,
+				1CF26D05297B27C300B3AFC8 /* Minor Arcana */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -309,31 +517,87 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF26D60297B342300B3AFC8 /* 65-TwoOfSwords.swift in Sources */,
 				1CF26CF8297B228000B3AFC8 /* 15-TheDevil.swift in Sources */,
+				1CF26D6C297B342300B3AFC8 /* 71-EightOfSwords.swift in Sources */,
+				1CF26D72297B342300B3AFC8 /* 63-KingOfCups.swift in Sources */,
+				1CF26D6A297B342300B3AFC8 /* 64-AceOfSwords.swift in Sources */,
 				1CF729CD291844EA009DD9AF /* 0-TheFool.swift in Sources */,
 				1CF729C8291840EC009DD9AF /* TarotCards.swift in Sources */,
 				1CF26D04297B24C700B3AFC8 /* 21-TheWorld.swift in Sources */,
+				1CF26D10297B28D200B3AFC8 /* 26-FiveOfWands.swift in Sources */,
+				1CF26D18297B2B6900B3AFC8 /* 30-NineOfWands.swift in Sources */,
+				1CF26D6B297B342300B3AFC8 /* 69-SixOfSwords.swift in Sources */,
+				1CF26D70297B342300B3AFC8 /* 62-QueenOfCups.swift in Sources */,
 				1CB4C9D0295E28E600414E41 /* 9-TheHermit.swift in Sources */,
+				1CF26D36297B2EDD00B3AFC8 /* 37-TwoOfPentacles.swift in Sources */,
+				1CF26D74297B342300B3AFC8 /* 54-FiveOfCups.swift in Sources */,
+				1CF26D6F297B342300B3AFC8 /* 61-KnightOfCups.swift in Sources */,
+				1CF26D5F297B342300B3AFC8 /* 66-ThreeOfSwords.swift in Sources */,
 				1CB4C9CA295E282A00414E41 /* 6-TheLovers.swift in Sources */,
+				1CF26D64297B342300B3AFC8 /* 77-KingOfSwords.swift in Sources */,
+				1CF26D61297B342300B3AFC8 /* 74-PageOfSwords.swift in Sources */,
+				1CF26D3A297B2EDD00B3AFC8 /* 40-FiveOfPentacles.swift in Sources */,
+				1CF26D38297B2EDD00B3AFC8 /* 38-ThreeOfPentacles.swift in Sources */,
 				1CB4C9D9295E2F8300414E41 /* 13-Death.swift in Sources */,
 				1CF26CFC297B233800B3AFC8 /* 17-TheStar.swift in Sources */,
+				1CF26D35297B2EDD00B3AFC8 /* 47-KnightOfPentacles.swift in Sources */,
+				1CF26D3D297B2EDD00B3AFC8 /* 49-KingOfPentacles.swift in Sources */,
+				1CF26D39297B2EDD00B3AFC8 /* 43-EightOfPentacles.swift in Sources */,
+				1CF26D1E297B2BAE00B3AFC8 /* 33-KnightOfWands.swift in Sources */,
 				1CB4C9C6295E26DB00414E41 /* 4-TheEmperor.swift in Sources */,
+				1CF26D12297B28E700B3AFC8 /* 27-SixOfWands.swift in Sources */,
+				1CF26D16297B2B5600B3AFC8 /* 29-EightOfWands.swift in Sources */,
+				1CF26D71297B342300B3AFC8 /* 52-ThreeOfCups.swift in Sources */,
 				1CB4C9D5295E2A4D00414E41 /* 11-TheJustice.swift in Sources */,
+				1CF26D08297B27F600B3AFC8 /* 22-AceOfWands.swift in Sources */,
+				1CF26D34297B2EDD00B3AFC8 /* 44-NineOfPentacles.swift in Sources */,
 				1CF26CFE297B23C200B3AFC8 /* 18-TheMoon.swift in Sources */,
+				1CF26D3E297B2EDD00B3AFC8 /* 45-TenOfPentacles.swift in Sources */,
 				1CB4C9CC295E285A00414E41 /* 7-TheChariot.swift in Sources */,
+				1CF26D69297B342300B3AFC8 /* 75-KnightOfSwords.swift in Sources */,
 				1CF26CFA297B22C800B3AFC8 /* 16-TheTower.swift in Sources */,
+				1CF26D6D297B342300B3AFC8 /* 59-TenOfCups.swift in Sources */,
 				1CB4C9C8295E27F700414E41 /* 5-TheHierophant.swift in Sources */,
+				1CF26D66297B342300B3AFC8 /* 68-FiveOfSwords.swift in Sources */,
+				1CF26D20297B2BBB00B3AFC8 /* 34-QueenOfWands.swift in Sources */,
+				1CF26D6E297B342300B3AFC8 /* 53-FourOfCups.swift in Sources */,
+				1CF26D33297B2EDD00B3AFC8 /* 48-QueenOfPentacles.swift in Sources */,
+				1CF26D75297B342300B3AFC8 /* 50-AceOfCups.swift in Sources */,
+				1CF26D63297B342300B3AFC8 /* 70-SevenOfSwords.swift in Sources */,
+				1CF26D68297B342300B3AFC8 /* 73-TenOfSwords.swift in Sources */,
 				1CF729D229184619009DD9AF /* 1-TheMagician.swift in Sources */,
 				1CB4C9D3295E294600414E41 /* 10-WheelOfFortune.swift in Sources */,
 				1CB4C9D7295E2C3E00414E41 /* 12-TheHangedMan.swift in Sources */,
 				1CF26D00297B241900B3AFC8 /* 19-TheSun.swift in Sources */,
+				1CF26D67297B342300B3AFC8 /* 67-FourOfSwords.swift in Sources */,
+				1CF26D0C297B283100B3AFC8 /* 24-ThreeOfWands.swift in Sources */,
 				1CF26CF6297B220E00B3AFC8 /* 14-Temperance.swift in Sources */,
+				1CF26D0A297B281C00B3AFC8 /* 23-TwoOfWands.swift in Sources */,
 				1CF729D829184730009DD9AF /* 3-TheEmpress.swift in Sources */,
+				1CF26D73297B342300B3AFC8 /* 57-EightOfCups.swift in Sources */,
 				1CF26D02297B245E00B3AFC8 /* 20-Judgement.swift in Sources */,
+				1CF26D7A297B342300B3AFC8 /* 56-SevenOfCups.swift in Sources */,
+				1CF26D65297B342300B3AFC8 /* 76-QueenOfSwords.swift in Sources */,
+				1CF26D1C297B2B9B00B3AFC8 /* 32-PageOfWands.swift in Sources */,
+				1CF26D22297B2BFD00B3AFC8 /* 35-KingOfWands.swift in Sources */,
+				1CF26D77297B342300B3AFC8 /* 60-PageOfCups.swift in Sources */,
+				1CF26D1A297B2B8300B3AFC8 /* 31-TenOfWands.swift in Sources */,
 				1CF729D6291846F9009DD9AF /* 2-TheHighPriestess.swift in Sources */,
+				1CF26D3C297B2EDD00B3AFC8 /* 41-SixOfPentacles.swift in Sources */,
+				1CF26D79297B342300B3AFC8 /* 55-SixOfCups.swift in Sources */,
+				1CF26D3B297B2EDD00B3AFC8 /* 36-AceOfPentacles.swift in Sources */,
+				1CF26D3F297B2EDD00B3AFC8 /* 46-PageOfPentacles.swift in Sources */,
 				1CB4C9CE295E28A900414E41 /* 8-Strenght.swift in Sources */,
 				1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */,
+				1CF26D62297B342300B3AFC8 /* 72-NineOfSwords.swift in Sources */,
+				1CF26D37297B2EDD00B3AFC8 /* 39-FourOfPentacles.swift in Sources */,
+				1CF26D76297B342300B3AFC8 /* 58-NineOfCups.swift in Sources */,
+				1CF26D78297B342300B3AFC8 /* 51-TwoOfCups.swift in Sources */,
+				1CF26D0E297B28C000B3AFC8 /* 25-FourOfWands.swift in Sources */,
 				1CF729CA291843A9009DD9AF /* Arcana.swift in Sources */,
+				1CF26D14297B2B2300B3AFC8 /* 28-SevenOfWands.swift in Sources */,
+				1CF26D32297B2EDD00B3AFC8 /* 42-SevenOfPentacles.swift in Sources */,
 				1CF729D029184559009DD9AF /* TarotCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
