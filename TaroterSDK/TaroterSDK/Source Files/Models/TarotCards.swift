@@ -53,7 +53,7 @@ public enum TarotCards: CaseIterable {
         case .tower: return TheTowerCard()
         case .star: return TheStarCard()
         case .moon: return TheMoonCard()
-        case .sun: return TheFoolCard()
+        case .sun: return TheSunCard()
         case .judgement: return TheFoolCard()
         case .world: return TheFoolCard()
         }

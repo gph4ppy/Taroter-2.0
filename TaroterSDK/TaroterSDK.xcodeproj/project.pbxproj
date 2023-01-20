@@ -22,6 +22,7 @@
 		1CF26CFA297B22C800B3AFC8 /* 16-TheTower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26CF9297B22C800B3AFC8 /* 16-TheTower.swift */; };
 		1CF26CFC297B233800B3AFC8 /* 17-TheStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26CFB297B233800B3AFC8 /* 17-TheStar.swift */; };
 		1CF26CFE297B23C200B3AFC8 /* 18-TheMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26CFD297B23C200B3AFC8 /* 18-TheMoon.swift */; };
+		1CF26D00297B241900B3AFC8 /* 19-TheSun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26CFF297B241900B3AFC8 /* 19-TheSun.swift */; };
 		1CF7299E29183F9F009DD9AF /* TaroterSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */; };
 		1CF729A429183FA0009DD9AF /* TaroterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF7299929183F9F009DD9AF /* TaroterSDK.framework */; };
 		1CF729A929183FA0009DD9AF /* TaroterSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF729A829183FA0009DD9AF /* TaroterSDKTests.swift */; };
@@ -61,6 +62,7 @@
 		1CF26CF9297B22C800B3AFC8 /* 16-TheTower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16-TheTower.swift"; sourceTree = "<group>"; };
 		1CF26CFB297B233800B3AFC8 /* 17-TheStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "17-TheStar.swift"; sourceTree = "<group>"; };
 		1CF26CFD297B23C200B3AFC8 /* 18-TheMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18-TheMoon.swift"; sourceTree = "<group>"; };
+		1CF26CFF297B241900B3AFC8 /* 19-TheSun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19-TheSun.swift"; sourceTree = "<group>"; };
 		1CF7299929183F9F009DD9AF /* TaroterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaroterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF7299C29183F9F009DD9AF /* TaroterSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaroterSDK.h; sourceTree = "<group>"; };
 		1CF7299D29183F9F009DD9AF /* TaroterSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TaroterSDK.docc; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				1CF26CF9297B22C800B3AFC8 /* 16-TheTower.swift */,
 				1CF26CFB297B233800B3AFC8 /* 17-TheStar.swift */,
 				1CF26CFD297B23C200B3AFC8 /* 18-TheMoon.swift */,
+				1CF26CFF297B241900B3AFC8 /* 19-TheSun.swift */,
 			);
 			path = "Major Arcana";
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				1CF729D229184619009DD9AF /* 1-TheMagician.swift in Sources */,
 				1CB4C9D3295E294600414E41 /* 10-WheelOfFortune.swift in Sources */,
 				1CB4C9D7295E2C3E00414E41 /* 12-TheHangedMan.swift in Sources */,
+				1CF26D00297B241900B3AFC8 /* 19-TheSun.swift in Sources */,
 				1CF26CF6297B220E00B3AFC8 /* 14-Temperance.swift in Sources */,
 				1CF729D829184730009DD9AF /* 3-TheEmpress.swift in Sources */,
 				1CF729D6291846F9009DD9AF /* 2-TheHighPriestess.swift in Sources */,
