@@ -13,7 +13,7 @@ struct TaroterApp: App {
         WindowGroup {
             NavigationView {
                 ZStack {
-                    TRColor.blackPearl.ignoresSafeArea()  
+                    TRColor.blackPearl.ignoresSafeArea()
                     CardsView(viewModel: CardsViewModel())
                 }
             }

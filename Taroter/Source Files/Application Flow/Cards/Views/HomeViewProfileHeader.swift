@@ -19,7 +19,11 @@ struct HomeViewProfileHeader: View {
 
             Spacer()
 
-            Image(systemName: "magnifyingglass")
+            NavigationLink {
+                SearchView(viewModel: SearchViewModel())
+            } label: {
+                Image(systemName: "magnifyingglass")
+            }
         }
         .font(.system(size: 24))
         .foregroundColor(TRColor.snow)
