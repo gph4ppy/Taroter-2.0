@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
 		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
 		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF26D7E297B39F500B3AFC8 /* SearchView.swift */,
+				1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
+				1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

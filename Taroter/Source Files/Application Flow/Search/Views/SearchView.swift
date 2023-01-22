@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
-    @FocusState private var isSearchFieldFocused
     @Environment(\.dismiss) private var dismissAction
 
     var body: some View {
@@ -44,18 +43,11 @@ struct SearchView: View {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(viewModel.searchText.isEmpty ? .gray : TRColor.snow)
 
-                    TextField("Search...", text: $viewModel.searchText)
-                        .autocorrectionDisabled()
-                        .submitLabel(.done)
-                        .focused($isSearchFieldFocused)
-                        .foregroundColor(TRColor.snow)
+                    SearchTextField(searchText: $viewModel.searchText)
                 }
             }
         }
         .onChange(of: viewModel.searchText) { _ in viewModel.search() }
-        .onAppear {
-            isSearchFieldFocused = true
-        }
         // ↓ Workaround, as this view doesn't have background when pushed by the NavigationView.
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(TRColor.blackPearl)
