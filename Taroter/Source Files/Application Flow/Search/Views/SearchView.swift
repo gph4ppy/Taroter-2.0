@@ -12,15 +12,23 @@ struct SearchView: View {
 
     var body: some View {
         VStack {
-            if viewModel.searchResults.isEmpty {
+            switch (viewModel.searchResults.isEmpty, viewModel.searchText.isEmpty) {
+            case (true, true):
                 Text("Looking for cards? Search them with name, zodiac sign, time or keyword.")
                     .multilineTextAlignment(.center)
                     .foregroundColor(TRColor.snow)
                     .font(.system(size: 16))
-            } else {
+            case (true, false):
+                Text("Couldn't find a card with ") +
+                Text("\"\(viewModel.searchText)\" ").bold() +
+                Text("in its data. Please, try again with different search data.")
+            default:
                 CardsGrid(cards: viewModel.searchResults)
             }
         }
+        .multilineTextAlignment(.center)
+        .foregroundColor(TRColor.snow)
+        .font(.system(size: 16))
         .padding(16)
         .navigationBarBackButtonHidden()
         .toolbar {
