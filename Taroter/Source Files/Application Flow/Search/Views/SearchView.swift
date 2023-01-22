@@ -32,24 +32,27 @@ struct SearchView: View {
         .font(.system(size: 16))
         .padding(16)
         .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                HStack(spacing: 6) {
-                    Button(action: dismissAction.callAsFunction) {
-                        Image(systemName: "chevron.left")
-                    }
-                    .buttonStyle(.plain)
-
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(viewModel.searchText.isEmpty ? .gray : TRColor.snow)
-
-                    SearchTextField(searchText: $viewModel.searchText)
-                }
-            }
-        }
+        .toolbar(content: buildToolbar)
         .onChange(of: viewModel.searchText) { _ in viewModel.search() }
         // ↓ Workaround, as this view doesn't have background when pushed by the NavigationView.
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(TRColor.blackPearl)
+    }
+
+    /// This method builds a SearchView toolbar content.
+    @ToolbarContentBuilder private func buildToolbar() -> some ToolbarContent {
+        ToolbarItem(placement: .principal) {
+            HStack(spacing: 6) {
+                Button(action: dismissAction.callAsFunction) {
+                    Image(systemName: "chevron.left")
+                }
+                .buttonStyle(.plain)
+
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(viewModel.searchText.isEmpty ? .gray : TRColor.snow)
+
+                SearchTextField(searchText: $viewModel.searchText)
+            }
+        }
     }
 }
