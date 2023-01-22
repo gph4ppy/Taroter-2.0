@@ -34,7 +34,7 @@ struct SearchView: View {
                 }
             }
         }
-        .onChange(of: viewModel.searchText) { viewModel.search(by: $0) }
+        .onChange(of: viewModel.searchText) { _ in viewModel.search() }
         // ↓ Workaround, as this view doesn't have background when pushed by the NavigationView.
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(TRColor.blackPearl)
