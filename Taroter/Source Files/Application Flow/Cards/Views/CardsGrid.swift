@@ -27,19 +27,11 @@ struct CardsGrid: View {
         ScrollView(showsIndicators: false) {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(cards, id: \.data.id) { card in
-                    VStack(spacing: 10) {
-                        Image(card.data.name)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(height: 200)
-                            .cornerRadius(cornerRadius)
-
-                        Text(card.data.name)
-                            .fontWeight(.semibold)
-                            .font(.system(size: 14))
-                            .multilineTextAlignment(.center)
+                    NavigationLink {
+                        CardDetailsView(viewModel: CardDetailsViewModel(card: card))
+                    } label: {
+                        CardCell(card: card, cornerRadius: cornerRadius)
                     }
-                    .frame(maxHeight: .infinity, alignment: .top)
                 }
             }
         }

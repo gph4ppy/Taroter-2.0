@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
+		1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12C297CCD2200E46636 /* CardCell.swift */; };
+		1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD131297CCDC400E46636 /* CardDetailsView.swift */; };
+		1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */; };
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
 		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
@@ -62,6 +65,9 @@
 
 /* Begin PBXFileReference section */
 		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		1C9DD12C297CCD2200E46636 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		1C9DD131297CCDC400E46636 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
+		1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
 		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -112,6 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9DD12E297CCDA100E46636 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1C9DD130297CCDBA00E46636 /* ViewModels */,
+				1C9DD12F297CCDB200E46636 /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		1C9DD12F297CCDB200E46636 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9DD131297CCDC400E46636 /* CardDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C9DD130297CCDBA00E46636 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		1CF0C1C928FA07FF00CAB508 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +233,7 @@
 				1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */,
 				1CF0C20B28FA08BC00CAB508 /* Onboarding */,
 				1CF0C20C28FA08C400CAB508 /* Cards */,
+				1C9DD12E297CCDA100E46636 /* Details */,
 				1CF26D7B297B390E00B3AFC8 /* Search */,
 			);
 			path = "Application Flow";
@@ -264,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */,
+				1C9DD12C297CCD2200E46636 /* CardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -479,8 +512,11 @@
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
+				1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */,
+				1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */,
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
+				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
