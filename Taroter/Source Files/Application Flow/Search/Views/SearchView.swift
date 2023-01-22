@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
+    @FocusState private var isSearchFieldFocused
+    @Environment(\.dismiss) private var dismissAction
 
     var body: some View {
         VStack {
@@ -32,17 +34,28 @@ struct SearchView: View {
         .padding(16)
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
+            ToolbarItem(placement: .principal) {
                 HStack(spacing: 6) {
-                    Image(systemName: "chevron.left")
+                    Button(action: dismissAction.callAsFunction) {
+                        Image(systemName: "chevron.left")
+                    }
+                    .buttonStyle(.plain)
+
                     Image(systemName: "magnifyingglass")
+                        .foregroundColor(viewModel.searchText.isEmpty ? .gray : TRColor.snow)
+
                     TextField("Search...", text: $viewModel.searchText)
                         .autocorrectionDisabled()
                         .submitLabel(.done)
+                        .focused($isSearchFieldFocused)
+                        .foregroundColor(TRColor.snow)
                 }
             }
         }
         .onChange(of: viewModel.searchText) { _ in viewModel.search() }
+        .onAppear {
+            isSearchFieldFocused = true
+        }
         // ↓ Workaround, as this view doesn't have background when pushed by the NavigationView.
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(TRColor.blackPearl)
