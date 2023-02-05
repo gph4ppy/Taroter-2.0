@@ -61,13 +61,22 @@ struct CardDetailsView: View {
         var alignment: Alignment {
             switch self {
             case .upright:
+                return .topLeading
+            case .reversed:
+                return .topTrailing
+            }
+        }
+
+        var horizontalAlignment: HorizontalAlignment {
+            switch self {
+            case .upright:
                 return .leading
             case .reversed:
                 return .trailing
             }
         }
 
-        var horizontalAlignment: HorizontalAlignment {
+        var textAlignment: TextAlignment {
             switch self {
             case .upright:
                 return .leading
@@ -163,10 +172,11 @@ struct CardDetailsView: View {
             Text(column.title).fontWeight(.semibold)
             ForEach(column.data(for: viewModel.card), id: \.self) { keyword in
                 Text(keyword)
+                    .multilineTextAlignment(column.textAlignment)
             }
         }
         .font(.system(size: 16))
-        .frame(maxWidth: .infinity, alignment: column.alignment)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: column.alignment)
     }
 }
 
