@@ -45,6 +45,47 @@ struct CardDetailsView: View {
         }
     }
 
+    enum KeywordsColumns: CaseIterable {
+        case upright
+        case reversed
+
+        var title: String {
+            switch self {
+            case .upright:
+                return "Upright"
+            case .reversed:
+                return "Reversed"
+            }
+        }
+
+        var alignment: Alignment {
+            switch self {
+            case .upright:
+                return .leading
+            case .reversed:
+                return .trailing
+            }
+        }
+
+        var horizontalAlignment: HorizontalAlignment {
+            switch self {
+            case .upright:
+                return .leading
+            case .reversed:
+                return .trailing
+            }
+        }
+
+        func data(for card: TarotCards) -> [String] {
+            switch self {
+            case .upright:
+                return card.data.meanings.positive
+            case .reversed:
+                return card.data.meanings.negative
+            }
+        }
+    }
+
     var body: some View {
         ScrollView {
             VStack(spacing: 8) {
@@ -68,6 +109,13 @@ struct CardDetailsView: View {
                     createInformationRow(title: row.title, data: row.data(for: viewModel.card))
                         .padding(.bottom, 8)
                 }
+
+                HStack {
+                    ForEach(KeywordsColumns.allCases, id: \.self) { column in
+                        createKeywordsColumn(column: column)
+                    }
+                }
+                .padding(.top, 20)
             }
             .padding(20)
         }
@@ -108,6 +156,17 @@ struct CardDetailsView: View {
                 .multilineTextAlignment(.trailing)
         }
         .font(.system(size: 16))
+    }
+
+    private func createKeywordsColumn(column: KeywordsColumns) -> some View {
+        VStack(alignment: column.horizontalAlignment, spacing: 10) {
+            Text(column.title).fontWeight(.semibold)
+            ForEach(column.data(for: viewModel.card), id: \.self) { keyword in
+                Text(keyword)
+            }
+        }
+        .font(.system(size: 16))
+        .frame(maxWidth: .infinity, alignment: column.alignment)
     }
 }
 
