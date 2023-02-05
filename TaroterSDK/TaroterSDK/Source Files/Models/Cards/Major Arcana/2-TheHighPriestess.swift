@@ -14,6 +14,28 @@ struct TheHighPriestessCard: TarotCard {
     var zodiacSign: String = ""
     var numerology: Int = 300
     var time: String = ""
-    var meanings: Meanings = (positive: [], negative: [])
+    var meanings: Meanings = (positive: [
+        "balance",
+        "consent with intuition",
+        "emotions",
+        "femininity",
+        "inner peace",
+        "intuition",
+        "mother",
+        "mystery",
+        "no action",
+        "peace",
+        "sensitivity",
+        "spirituality",
+        "wisdom",
+        "woman"
+    ], negative: [
+        "complexes",
+        "fear",
+        "hypersensitivity",
+        "mental issues",
+        "suffering",
+        "worrying about the opinion of others"
+    ])
     var id: Int = 2
 }
