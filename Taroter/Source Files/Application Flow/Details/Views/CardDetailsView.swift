@@ -6,10 +6,44 @@
 //
 
 import SwiftUI
+import TaroterSDK
 
 struct CardDetailsView: View {
     @ObservedObject var viewModel: CardDetailsViewModel
     @Environment(\.dismiss) private var dismissAction
+
+    enum InformationRows: CaseIterable {
+        case yesOrNo
+        case zodiacSign
+        case numerology
+        case time
+
+        var title: String {
+            switch self {
+            case .yesOrNo:
+                return "Yes or No?"
+            case .zodiacSign:
+                return "Zodiac Sign"
+            case .numerology:
+                return "Numerology"
+            case .time:
+                return "Time"
+            }
+        }
+
+        func data(for card: TarotCards) -> String {
+            switch self {
+            case .yesOrNo:
+                return card.data.yesOrNo
+            case .zodiacSign:
+                return card.data.zodiacSign
+            case .numerology:
+                return card.data.numerology.asString
+            case .time:
+                return card.data.time
+            }
+        }
+    }
 
     var body: some View {
         ScrollView {
@@ -28,10 +62,14 @@ struct CardDetailsView: View {
                         .rotationEffect(.degrees(180))
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.top, 20)
+                .padding(.vertical, 20)
+
+                ForEach(InformationRows.allCases, id: \.self) { row in
+                    createInformationRow(title: row.title, data: row.data(for: viewModel.card))
+                        .padding(.bottom, 8)
+                }
             }
             .padding(20)
-
         }
         .foregroundColor(TRColor.snow)
         .font(.system(size: 16))
@@ -40,7 +78,6 @@ struct CardDetailsView: View {
         // ↓ Workaround, as this view doesn't have background when pushed by the NavigationView.
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(TRColor.blackPearl)
-//        .ignoresSafeArea()
     }
 
     /// This method builds a SearchView toolbar content.
@@ -59,6 +96,18 @@ struct CardDetailsView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .cornerRadius(24)
+    }
+
+    private func createInformationRow(title: String, data: String) -> some View {
+        HStack {
+            Text(title)
+                .fontWeight(.semibold)
+                .multilineTextAlignment(.leading)
+            Spacer()
+            Text(data)
+                .multilineTextAlignment(.trailing)
+        }
+        .font(.system(size: 16))
     }
 }
 

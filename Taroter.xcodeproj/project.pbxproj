@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FA298F918B00DF9E20 /* IntExtension.swift */; };
 		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
 		1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12C297CCD2200E46636 /* CardCell.swift */; };
 		1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD131297CCDC400E46636 /* CardDetailsView.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C3537FA298F918B00DF9E20 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1C9DD12C297CCD2200E46636 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		1C9DD131297CCDC400E46636 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF26D83297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift */,
+				1C3537FA298F918B00DF9E20 /* IntExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
+				1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
