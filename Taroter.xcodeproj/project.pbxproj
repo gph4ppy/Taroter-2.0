@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FA298F918B00DF9E20 /* IntExtension.swift */; };
+		1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FE29904E2C00DF9E20 /* TabBar.swift */; };
 		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
 		1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12C297CCD2200E46636 /* CardCell.swift */; };
 		1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD131297CCDC400E46636 /* CardDetailsView.swift */; };
 		1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */; };
+		1CC300342992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */; };
+		1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300352992DCED006C5D96 /* MaterialView.swift */; };
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
 		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
@@ -66,10 +69,13 @@
 
 /* Begin PBXFileReference section */
 		1C3537FA298F918B00DF9E20 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		1C3537FE29904E2C00DF9E20 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1C9DD12C297CCD2200E46636 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		1C9DD131297CCDC400E46636 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
 		1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsViewModel.swift; sourceTree = "<group>"; };
+		1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+RoundedSpecificCorners.swift"; sourceTree = "<group>"; };
+		1CC300352992DCED006C5D96 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
 		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -298,7 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C21828FA172800CAB508 /* BackgroundOverlay.swift */,
+				1C3537FE29904E2C00DF9E20 /* TabBar.swift */,
 				1C9DD12C297CCD2200E46636 /* CardCell.swift */,
+				1CC300352992DCED006C5D96 /* MaterialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 			children = (
 				1CF26D83297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift */,
 				1C3537FA298F918B00DF9E20 /* IntExtension.swift */,
+				1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -515,8 +524,11 @@
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
+				1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */,
 				1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */,
+				1CC300342992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift in Sources */,
 				1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */,
+				1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */,
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
