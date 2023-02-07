@@ -45,7 +45,7 @@ struct TabBar: View {
     @Binding var selectedTab: Items
     @State private var indicatorPosition: CGPoint = .zero
     private let cornerRadius: CGFloat = 30
-    private let offset: CGFloat = 38
+    private let offset: CGFloat = 36
     private let indicatorSize: CGFloat = 80
 
     var body: some View {
@@ -56,12 +56,12 @@ struct TabBar: View {
                 .frame(maxHeight: indicatorSize)
                 .position(
                     x: indicatorPosition.x + indicatorSize / 2,
-                    y: indicatorPosition.y - (indicatorSize / 4 - 2)
+                    y: indicatorPosition.y + (indicatorSize / 4 - 2)
                 )
 
             // TabBar
             MaterialView(.systemThinMaterialDark)
-                .frame(maxHeight: 100)
+                .frame(height: 100)
                 .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
                 .offset(y: offset)
                 .overlay(content: createTabBarStroke)
@@ -80,7 +80,7 @@ struct TabBar: View {
                 )
             }
         }
-        .offset(y: 24)
+        .offset(y: 18)
     }
 
     @ViewBuilder private func createTabBarStroke() -> some View {
