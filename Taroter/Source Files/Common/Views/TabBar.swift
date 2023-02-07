@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
-    private enum Items: CaseIterable {
+    enum Items: CaseIterable {
         case cards
         case scanner
         case spreads
@@ -42,12 +42,22 @@ struct TabBar: View {
         }
     }
 
+    @State private var selectedTab: Items = .cards
+    @State private var indicatorPosition: CGPoint = .zero
     private let cornerRadius: CGFloat = 30
     private let offset: CGFloat = 38
+    private let indicatorSize: CGFloat = 80
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            CardsView(viewModel: .init())
+            // Indicator
+            Circle()
+                .fill(TRColor.neonSangrina)
+                .frame(maxHeight: indicatorSize)
+                .position(
+                    x: indicatorPosition.x + indicatorSize / 2,
+                    y: indicatorPosition.y - (indicatorSize / 4 - 2)
+                )
 
             // TabBar
             MaterialView(.systemThinMaterialDark)
@@ -56,14 +66,28 @@ struct TabBar: View {
                 .offset(y: offset)
                 .overlay(content: createTabBarStroke)
                 .padding(.horizontal, -2)
+                .overlay(content: createTabBarItems)
         }
+    }
+
+    private func createTabBarItems() -> some View {
+        HStack {
+            ForEach(Items.allCases, id: \.title) { item in
+                TabBarButton(
+                    item: item,
+                    selectedTab: $selectedTab,
+                    indicatorPosition: $indicatorPosition
+                )
+            }
+        }
+        .offset(y: 24)
     }
 
     @ViewBuilder private func createTabBarStroke() -> some View {
         let colors: [Color] = [.white.opacity(0.3), .clear]
         let gradient = LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing)
 
-        RoundedRectangle(cornerRadius: cornerRadius)
+        RoundedCorner(radius: cornerRadius, corners: [.topLeft, .topRight])
             .stroke(gradient, lineWidth: 1)
             .offset(y: offset)
     }
