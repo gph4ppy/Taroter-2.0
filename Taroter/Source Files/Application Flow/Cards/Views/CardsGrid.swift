@@ -12,6 +12,10 @@ import TaroterSDK
 struct CardsGrid: View {
     /// A property containing all cards displayed in a grid.
     let cards: [TarotCards]
+    /// A property indicating whether this view is presented
+    /// with the TabBar. If so, the padding will be applied,
+    /// so the TabBar doesn't cover the bottom of this view.
+    var isPresentedWithTabBar: Bool = true
     /// A corner radius used for grid styling.
     private let cornerRadius: CGFloat = 24
     /// A property used for setuping the grid.
@@ -34,6 +38,7 @@ struct CardsGrid: View {
                     }
                 }
             }
+            .padding(.bottom, isPresentedWithTabBar ? 80 : 0)
         }
         .cornerRadius(cornerRadius)
     }
