@@ -42,7 +42,7 @@ struct TabBar: View {
         }
     }
 
-    @State private var selectedTab: Items = .cards
+    @Binding var selectedTab: Items
     @State private var indicatorPosition: CGPoint = .zero
     private let cornerRadius: CGFloat = 30
     private let offset: CGFloat = 38

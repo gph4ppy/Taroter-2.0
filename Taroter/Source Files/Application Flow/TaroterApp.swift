@@ -11,11 +11,9 @@ import SwiftUI
 struct TaroterApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                TabBar()
-            }
-            .navigationViewStyle(.stack)
-            .preferredColorScheme(.dark)
+            NavigationCoordinatorView()
+                .navigationViewStyle(.stack)
+                .preferredColorScheme(.dark)
         }
     }
 }

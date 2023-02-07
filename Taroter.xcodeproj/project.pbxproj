@@ -16,6 +16,7 @@
 		1CC300342992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */; };
 		1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300352992DCED006C5D96 /* MaterialView.swift */; };
 		1CC300382992EF55006C5D96 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300372992EF55006C5D96 /* TabBarButton.swift */; };
+		1CC3003A2992F137006C5D96 /* NavigationCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */; };
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
 		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+RoundedSpecificCorners.swift"; sourceTree = "<group>"; };
 		1CC300352992DCED006C5D96 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		1CC300372992EF55006C5D96 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorView.swift; sourceTree = "<group>"; };
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
 		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */,
+				1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */,
 				1CF0C20B28FA08BC00CAB508 /* Onboarding */,
 				1CF0C20C28FA08C400CAB508 /* Cards */,
 				1C9DD12E297CCDA100E46636 /* Details */,
@@ -537,6 +540,7 @@
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
 				1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */,
+				1CC3003A2992F137006C5D96 /* NavigationCoordinatorView.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
