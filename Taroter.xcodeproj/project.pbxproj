@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FA298F918B00DF9E20 /* IntExtension.swift */; };
 		1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FE29904E2C00DF9E20 /* TabBar.swift */; };
+		1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC072994454F00819425 /* ScannerViewController.swift */; };
+		1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC09299445C500819425 /* ScannerView.swift */; };
+		1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC0B299445D200819425 /* ScannerViewModel.swift */; };
 		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
 		1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12C297CCD2200E46636 /* CardCell.swift */; };
 		1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD131297CCDC400E46636 /* CardDetailsView.swift */; };
@@ -72,6 +75,9 @@
 /* Begin PBXFileReference section */
 		1C3537FA298F918B00DF9E20 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		1C3537FE29904E2C00DF9E20 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1C8DAC072994454F00819425 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		1C8DAC09299445C500819425 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		1C8DAC0B299445D200819425 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1C9DD12C297CCD2200E46636 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		1C9DD131297CCDC400E46636 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
@@ -130,6 +136,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C8DAC032994451300819425 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DAC042994451C00819425 /* ViewModels */,
+				1C8DAC052994452200819425 /* Views */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		1C8DAC042994451C00819425 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DAC0B299445D200819425 /* ScannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1C8DAC052994452200819425 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DAC062994452C00819425 /* ViewControllers */,
+				1C8DAC09299445C500819425 /* ScannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C8DAC062994452C00819425 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C8DAC072994454F00819425 /* ScannerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		1C9DD12E297CCDA100E46636 /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +286,7 @@
 				1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */,
 				1CF0C20B28FA08BC00CAB508 /* Onboarding */,
 				1CF0C20C28FA08C400CAB508 /* Cards */,
+				1C8DAC032994451300819425 /* Scanner */,
 				1C9DD12E297CCDA100E46636 /* Details */,
 				1CF26D7B297B390E00B3AFC8 /* Search */,
 			);
@@ -528,10 +569,12 @@
 				1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */,
 				1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */,
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
+				1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
 				1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */,
 				1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */,
+				1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */,
 				1CC300342992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift in Sources */,
 				1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */,
 				1CC300382992EF55006C5D96 /* TabBarButton.swift in Sources */,
@@ -539,6 +582,7 @@
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
+				1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */,
 				1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */,
 				1CC3003A2992F137006C5D96 /* NavigationCoordinatorView.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,

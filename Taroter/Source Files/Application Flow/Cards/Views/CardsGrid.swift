@@ -19,13 +19,7 @@ struct CardsGrid: View {
     /// A corner radius used for grid styling.
     private let cornerRadius: CGFloat = 24
     /// A property used for setuping the grid.
-    private let columns: [GridItem] = [
-        GridItem(
-            .adaptive(minimum: 110),
-            spacing: 20,
-            alignment: .top
-        )
-    ]
+    private let columns: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
 
     var body: some View {
         ScrollView(showsIndicators: false) {
