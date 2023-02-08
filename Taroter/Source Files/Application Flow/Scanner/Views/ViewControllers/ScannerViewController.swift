@@ -35,7 +35,11 @@ final class ScannerViewController: UIViewController {
                 previewLayer.frame = frame
                 self.view.layer.addSublayer(previewLayer)
             }
+
             self?.viewModel.captureSession.startRunning()
+            DispatchQueue.main.async {
+                self?.viewModel.isLoading = false
+            }
         }
     }
 }

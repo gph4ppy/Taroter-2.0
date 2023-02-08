@@ -12,6 +12,8 @@
 		1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC072994454F00819425 /* ScannerViewController.swift */; };
 		1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC09299445C500819425 /* ScannerView.swift */; };
 		1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC0B299445D200819425 /* ScannerViewModel.swift */; };
+		1C8DAC0E29944AE400819425 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC0D29944AE400819425 /* Application.swift */; };
+		1C8DAC1029944C9700819425 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC0F29944C9700819425 /* LoadingView.swift */; };
 		1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */; };
 		1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD12C297CCD2200E46636 /* CardCell.swift */; };
 		1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9DD131297CCDC400E46636 /* CardDetailsView.swift */; };
@@ -78,6 +80,8 @@
 		1C8DAC072994454F00819425 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		1C8DAC09299445C500819425 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		1C8DAC0B299445D200819425 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		1C8DAC0D29944AE400819425 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		1C8DAC0F29944C9700819425 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1C9DD12A297CC7BD00E46636 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		1C9DD12C297CCD2200E46636 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		1C9DD131297CCDC400E46636 /* CardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailsView.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 			children = (
 				1CF0C21028FA093600CAB508 /* Local Storage */,
 				1CF0C21128FA0BC700CAB508 /* TRColors.swift */,
+				1C8DAC0D29944AE400819425 /* Application.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				1CC300372992EF55006C5D96 /* TabBarButton.swift */,
 				1C9DD12C297CCD2200E46636 /* CardCell.swift */,
 				1CC300352992DCED006C5D96 /* MaterialView.swift */,
+				1C8DAC0F29944C9700819425 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -572,6 +578,7 @@
 				1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
+				1C8DAC1029944C9700819425 /* LoadingView.swift in Sources */,
 				1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */,
 				1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */,
 				1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */,
@@ -588,6 +595,7 @@
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
+				1C8DAC0E29944AE400819425 /* Application.swift in Sources */,
 				1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

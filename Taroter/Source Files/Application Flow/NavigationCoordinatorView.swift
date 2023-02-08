@@ -19,7 +19,7 @@ struct NavigationCoordinatorView: View {
                 case .cards:
                     CardsView(viewModel: cardsViewModel)
                 case .scanner:
-                    ScannerView().ignoresSafeArea()
+                    ScannerView()
                 case .spreads:
                     Text("Spreads").font(.largeTitle)
                 case .settings:

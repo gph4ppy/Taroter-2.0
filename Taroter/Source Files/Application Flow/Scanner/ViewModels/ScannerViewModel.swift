@@ -9,12 +9,13 @@ import AVFoundation
 import Foundation
 
 @MainActor
-final class ScannerViewModel: ObservableObject {
+final class ScannerViewModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     let captureSession: AVCaptureSession = AVCaptureSession()
     let sessionQueue: DispatchQueue = DispatchQueue(label: "sessionQueue")
     var videoPreviewLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer()
+    var videoOutput: AVCaptureVideoDataOutput = AVCaptureVideoDataOutput()
     var cameraPermissionGranted: Bool = false
-    var isLoading: Bool = false
+    @Published var isLoading: Bool = false
 
     func checkCameraPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -34,12 +35,21 @@ final class ScannerViewModel: ObservableObject {
             captureSession.canAddInput(input)
         else { return }
 
-        isLoading = true
+        DispatchQueue.main.sync { [weak self] in
+            self?.isLoading = true
+        }
         captureSession.addInput(input)
 
+        // Preview Layer
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         videoPreviewLayer.connection?.videoOrientation = .portrait
+
+        // Detector
+        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "sampleBufferQueue"))
+        captureSession.addOutput(videoOutput)
+        videoOutput.connection(with: .video)?.videoOrientation = .portrait
+
         completionHandler(self.videoPreviewLayer)
     }
 
