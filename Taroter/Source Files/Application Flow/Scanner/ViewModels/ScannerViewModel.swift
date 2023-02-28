@@ -7,15 +7,21 @@
 
 import AVFoundation
 import Foundation
+import Vision
 
 @MainActor
-final class ScannerViewModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
-    let captureSession: AVCaptureSession = AVCaptureSession()
-    let sessionQueue: DispatchQueue = DispatchQueue(label: "sessionQueue")
-    var videoPreviewLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer()
-    var videoOutput: AVCaptureVideoDataOutput = AVCaptureVideoDataOutput()
-    var cameraPermissionGranted: Bool = false
+final class ScannerViewModel: ObservableObject {
+    let captureSession = AVCaptureSession()
+    let sessionQueue = DispatchQueue(label: "sessionQueue")
     @Published var isLoading: Bool = false
+    @Published var requests: [VNRequest] = []
+    @Published var visionModel: VNCoreMLModel?
+    var previewLayer = AVCaptureVideoPreviewLayer()
+    var cameraPermissionGranted: Bool = false
+
+    // Detector
+    var videoOutput = AVCaptureVideoDataOutput()
+    var detectionLayer: CALayer!
 
     func checkCameraPermissions() {
         switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -28,37 +34,31 @@ final class ScannerViewModel: NSObject, ObservableObject, AVCaptureVideoDataOutp
         }
     }
 
-    func setupCaptureSession(completionHandler: (AVCaptureVideoPreviewLayer) -> Void) {
-        guard
-            let device = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back),
-            let input = try? AVCaptureDeviceInput(device: device),
-            captureSession.canAddInput(input)
-        else { return }
-
-        DispatchQueue.main.sync { [weak self] in
-            self?.isLoading = true
-        }
-        captureSession.addInput(input)
-
-        // Preview Layer
-        videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        videoPreviewLayer.connection?.videoOrientation = .portrait
-
-        // Detector
-        videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "sampleBufferQueue"))
-        captureSession.addOutput(videoOutput)
-        videoOutput.connection(with: .video)?.videoOrientation = .portrait
-
-        completionHandler(self.videoPreviewLayer)
-    }
-
     private func requestCameraPermissions() {
         sessionQueue.suspend()
         AVCaptureDevice.requestAccess(for: .video) { [weak self] accessGranted in
             guard let self else { return }
             self.cameraPermissionGranted = accessGranted
             self.sessionQueue.resume()
+        }
+    }
+
+    func changeLoadingState(to state: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            self?.isLoading = state
+        }
+    }
+}
+
+extension ScannerViewModel {
+    func setupDetector(completion: @escaping VNRequestCompletionHandler) {
+        let manager = DetectorManager()
+        let model = manager.createDetectorModel()
+        let request = VNCoreMLRequest(model: model, completionHandler: completion)
+        request.imageCropAndScaleOption = .scaleFillRotate90CCW
+        DispatchQueue.main.async { [weak self] in
+            self?.visionModel = model
+            self?.requests = [request]
         }
     }
 }

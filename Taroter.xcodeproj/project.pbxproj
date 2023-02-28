@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FA298F918B00DF9E20 /* IntExtension.swift */; };
 		1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FE29904E2C00DF9E20 /* TabBar.swift */; };
+		1C60ADD629AE9C09002F003B /* ThresholdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */; };
+		1C621FF129A99EBA00713CFF /* DetectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C621FF029A99EBA00713CFF /* DetectorManager.swift */; };
 		1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC072994454F00819425 /* ScannerViewController.swift */; };
 		1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC09299445C500819425 /* ScannerView.swift */; };
 		1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC0B299445D200819425 /* ScannerViewModel.swift */; };
@@ -38,6 +40,7 @@
 		1CF26D7F297B39F500B3AFC8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D7E297B39F500B3AFC8 /* SearchView.swift */; };
 		1CF26D81297B39FF00B3AFC8 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D80297B39FF00B3AFC8 /* SearchViewModel.swift */; };
 		1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF26D83297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift */; };
+		1CF3CEE229A990FE00141020 /* TaroterDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1CF3CEE129A990FE00141020 /* TaroterDetector.mlmodel */; };
 		1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF728EE2918392E009DD9AF /* CardsGrid.swift */; };
 		1CF729F729185784009DD9AF /* TaroterSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; };
 		1CF729F829185784009DD9AF /* TaroterSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF729F629185784009DD9AF /* TaroterSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -77,6 +80,8 @@
 /* Begin PBXFileReference section */
 		1C3537FA298F918B00DF9E20 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		1C3537FE29904E2C00DF9E20 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdProvider.swift; sourceTree = "<group>"; };
+		1C621FF029A99EBA00713CFF /* DetectorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorManager.swift; sourceTree = "<group>"; };
 		1C8DAC072994454F00819425 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		1C8DAC09299445C500819425 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		1C8DAC0B299445D200819425 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 		1CF26D7E297B39F500B3AFC8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		1CF26D80297B39FF00B3AFC8 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1CF26D83297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		1CF3CEE129A990FE00141020 /* TaroterDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TaroterDetector.mlmodel; sourceTree = "<group>"; };
 		1CF728EE2918392E009DD9AF /* CardsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGrid.swift; sourceTree = "<group>"; };
 		1CF729F629185784009DD9AF /* TaroterSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TaroterSDK.xcframework; path = TaroterSDK/build/TaroterSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,9 +146,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C60ADD429AE9BED002F003B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CF3CEE129A990FE00141020 /* TaroterDetector.mlmodel */,
+				1C621FF029A99EBA00713CFF /* DetectorManager.swift */,
+				1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1C8DAC032994451300819425 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				1C60ADD429AE9BED002F003B /* Models */,
 				1C8DAC042994451C00819425 /* ViewModels */,
 				1C8DAC052994452200819425 /* Views */,
 			);
@@ -586,7 +603,9 @@
 				1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */,
 				1CC300382992EF55006C5D96 /* TabBarButton.swift in Sources */,
 				1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */,
+				1C621FF129A99EBA00713CFF /* DetectorManager.swift in Sources */,
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
+				1C60ADD629AE9C09002F003B /* ThresholdProvider.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
 				1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */,
@@ -596,6 +615,7 @@
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
 				1C8DAC0E29944AE400819425 /* Application.swift in Sources */,
+				1CF3CEE229A990FE00141020 /* TaroterDetector.mlmodel in Sources */,
 				1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
