@@ -23,7 +23,7 @@ struct NavigationCoordinatorView: View {
                 case .spreads:
                     Text("Spreads").font(.largeTitle)
                 case .settings:
-                    Text("Settings").font(.largeTitle)
+                    SettingsView()
                 }
                 TabBar(selectedTab: $selectedTab)
             }
