@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C14D4AE29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14D4AD29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */; };
+		1C14D4B029C12D4C0052779B /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14D4AF29C12D4C0052779B /* VideoPreview.swift */; };
+		1C14D4B329C12D740052779B /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C14D4B229C12D740052779B /* DrawingBoundingBoxView.swift */; };
 		1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FA298F918B00DF9E20 /* IntExtension.swift */; };
 		1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3537FE29904E2C00DF9E20 /* TabBar.swift */; };
+		1C3FE38C29C124280055D7A5 /* VNRecognizedObjectObservationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FE38B29C124280055D7A5 /* VNRecognizedObjectObservationExtension.swift */; };
+		1C3FE38F29C126C40055D7A5 /* VideoPreviewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FE38E29C126C40055D7A5 /* VideoPreviewDelegate.swift */; };
+		1C3FE39129C126F00055D7A5 /* ScannerViewController+VideoPreviewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FE39029C126F00055D7A5 /* ScannerViewController+VideoPreviewDelegate.swift */; };
 		1C60ADD629AE9C09002F003B /* ThresholdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */; };
 		1C621FF129A99EBA00713CFF /* DetectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C621FF029A99EBA00713CFF /* DetectorManager.swift */; };
 		1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DAC072994454F00819425 /* ScannerViewController.swift */; };
@@ -78,8 +84,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C14D4AD29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift"; sourceTree = "<group>"; };
+		1C14D4AF29C12D4C0052779B /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+		1C14D4B229C12D740052779B /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
 		1C3537FA298F918B00DF9E20 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		1C3537FE29904E2C00DF9E20 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1C3FE38B29C124280055D7A5 /* VNRecognizedObjectObservationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNRecognizedObjectObservationExtension.swift; sourceTree = "<group>"; };
+		1C3FE38E29C126C40055D7A5 /* VideoPreviewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewDelegate.swift; sourceTree = "<group>"; };
+		1C3FE39029C126F00055D7A5 /* ScannerViewController+VideoPreviewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScannerViewController+VideoPreviewDelegate.swift"; sourceTree = "<group>"; };
 		1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdProvider.swift; sourceTree = "<group>"; };
 		1C621FF029A99EBA00713CFF /* DetectorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectorManager.swift; sourceTree = "<group>"; };
 		1C8DAC072994454F00819425 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
@@ -146,12 +158,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C14D4B129C12D660052779B /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				1C14D4B229C12D740052779B /* DrawingBoundingBoxView.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		1C3FE38D29C126B80055D7A5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1C3FE38E29C126C40055D7A5 /* VideoPreviewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		1C60ADD429AE9BED002F003B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				1CF3CEE129A990FE00141020 /* TaroterDetector.mlmodel */,
 				1C621FF029A99EBA00713CFF /* DetectorManager.swift */,
 				1C60ADD529AE9C09002F003B /* ThresholdProvider.swift */,
+				1C14D4AF29C12D4C0052779B /* VideoPreview.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +206,7 @@
 		1C8DAC052994452200819425 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1C14D4B129C12D660052779B /* UIViews */,
 				1C8DAC062994452C00819425 /* ViewControllers */,
 				1C8DAC09299445C500819425 /* ScannerView.swift */,
 			);
@@ -418,9 +448,13 @@
 		1CF26D82297B3F8B00B3AFC8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1C3FE38D29C126B80055D7A5 /* Protocols */,
 				1CF26D83297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift */,
 				1C3537FA298F918B00DF9E20 /* IntExtension.swift */,
+				1C3FE38B29C124280055D7A5 /* VNRecognizedObjectObservationExtension.swift */,
 				1CC300332992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift */,
+				1C3FE39029C126F00055D7A5 /* ScannerViewController+VideoPreviewDelegate.swift */,
+				1C14D4AD29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -592,28 +626,34 @@
 				1CF0C21C28FA18D600CAB508 /* CardsViewModel.swift in Sources */,
 				1CF0C21228FA0BC700CAB508 /* TRColors.swift in Sources */,
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
+				1C14D4B029C12D4C0052779B /* VideoPreview.swift in Sources */,
 				1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
 				1C8DAC1029944C9700819425 /* LoadingView.swift in Sources */,
+				1C3FE38F29C126C40055D7A5 /* VideoPreviewDelegate.swift in Sources */,
 				1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */,
 				1C9DD132297CCDC400E46636 /* CardDetailsView.swift in Sources */,
 				1C8DAC0A299445C500819425 /* ScannerView.swift in Sources */,
 				1CC300342992D9E9006C5D96 /* SwiftUI+RoundedSpecificCorners.swift in Sources */,
 				1C9DD12D297CCD2200E46636 /* CardCell.swift in Sources */,
 				1CC300382992EF55006C5D96 /* TabBarButton.swift in Sources */,
+				1C3FE39129C126F00055D7A5 /* ScannerViewController+VideoPreviewDelegate.swift in Sources */,
 				1C3537FF29904E2C00DF9E20 /* TabBar.swift in Sources */,
 				1C621FF129A99EBA00713CFF /* DetectorManager.swift in Sources */,
 				1CF728EF2918392F009DD9AF /* CardsGrid.swift in Sources */,
+				1C14D4B329C12D740052779B /* DrawingBoundingBoxView.swift in Sources */,
 				1C60ADD629AE9C09002F003B /* ThresholdProvider.swift in Sources */,
 				1CF26D84297B3FB800B3AFC8 /* UINavigationController+UIGestureRecognizerDelegate.swift in Sources */,
 				1C9DD134297CCDF800E46636 /* CardDetailsViewModel.swift in Sources */,
 				1C8DAC082994454F00819425 /* ScannerViewController.swift in Sources */,
+				1C3FE38C29C124280055D7A5 /* VNRecognizedObjectObservationExtension.swift in Sources */,
 				1C3537FB298F918B00DF9E20 /* IntExtension.swift in Sources */,
 				1CC3003A2992F137006C5D96 /* NavigationCoordinatorView.swift in Sources */,
 				1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */,
 				1CF0C21628FA16C900CAB508 /* HomeViewProfileHeader.swift in Sources */,
 				1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */,
+				1C14D4AE29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */,
 				1C8DAC0E29944AE400819425 /* Application.swift in Sources */,
 				1CF3CEE229A990FE00141020 /* TaroterDetector.mlmodel in Sources */,
 				1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */,

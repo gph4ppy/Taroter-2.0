@@ -11,54 +11,38 @@ import Vision
 
 @MainActor
 final class ScannerViewModel: ObservableObject {
-    let captureSession = AVCaptureSession()
-    let sessionQueue = DispatchQueue(label: "sessionQueue")
+    let videoCapture: VideoPreview = VideoPreview()
+    let semaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
+    var request: VNCoreMLRequest?
     @Published var isLoading: Bool = false
-    @Published var requests: [VNRequest] = []
-    @Published var visionModel: VNCoreMLModel?
-    var previewLayer = AVCaptureVideoPreviewLayer()
-    var cameraPermissionGranted: Bool = false
+    @Published var isInferencing: Bool = false
 
-    // Detector
-    var videoOutput = AVCaptureVideoDataOutput()
-    var detectionLayer: CALayer!
-
-    func checkCameraPermissions() {
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-        case .authorized:
-            cameraPermissionGranted = true
-        case .notDetermined:
-            requestCameraPermissions()
-        default:
-            cameraPermissionGranted = false
-        }
+    func loadModel(completion: @escaping (_ request: VNRequest, _ error: Error?) -> Void) {
+        let model = DetectorManager.createDetectorModel()
+        request = VNCoreMLRequest(model: model, completionHandler: completion)
+        request?.imageCropAndScaleOption = .scaleFill
     }
 
-    private func requestCameraPermissions() {
-        sessionQueue.suspend()
-        AVCaptureDevice.requestAccess(for: .video) { [weak self] accessGranted in
-            guard let self else { return }
-            self.cameraPermissionGranted = accessGranted
-            self.sessionQueue.resume()
-        }
+    func setupCamera(completion: @escaping () -> Void) {
+        videoCapture.fps = 30
+        videoCapture.setup(sessionPreset: .hd1920x1080, completion: completion)
     }
 
-    func changeLoadingState(to state: Bool) {
+    func resizePreviewLayer(to frame: CGRect) {
+        videoCapture.previewLayer?.frame = frame
+    }
+
+    func predict(using pixelBuffer: CVPixelBuffer?) {
         DispatchQueue.main.async { [weak self] in
-            self?.isLoading = state
+            guard let self, let pixelBuffer, let request = self.request, !self.isInferencing else { return }
+            self.isInferencing = true
+            self.semaphore.wait()
+            self.performRequest(request, with: pixelBuffer)
         }
     }
-}
 
-extension ScannerViewModel {
-    func setupDetector(completion: @escaping VNRequestCompletionHandler) {
-        let manager = DetectorManager()
-        let model = manager.createDetectorModel()
-        let request = VNCoreMLRequest(model: model, completionHandler: completion)
-        request.imageCropAndScaleOption = .scaleFillRotate90CCW
-        DispatchQueue.main.async { [weak self] in
-            self?.visionModel = model
-            self?.requests = [request]
-        }
+    private func performRequest(_ request: VNCoreMLRequest, with pixelBuffer: CVPixelBuffer) {
+        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer)
+        try? handler.perform([request])
     }
 }

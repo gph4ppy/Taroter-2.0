@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import AVFoundation
 import Vision
 
+// TODO: - Change isLoading
 final class ScannerViewController: UIViewController {
     let viewModel: ScannerViewModel
-    private let thresholdProvider = ThresholdProvider()
-    private var screenRect: CGRect!
+    private var videoPreview: UIView!
+    private var boxesView: DrawingBoundingBoxView!
 
     init(viewModel: ScannerViewModel) {
         self.viewModel = viewModel
@@ -25,144 +25,67 @@ final class ScannerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.changeLoadingState(to: true)
-        viewModel.checkCameraPermissions()
-        viewModel.sessionQueue.async { [weak self] in
-            guard let self, self.viewModel.cameraPermissionGranted else { return }
-            self.setupSession()
-            self.setupLayers()
-            self.viewModel.setupDetector(completion: self.detectionDidComplete)
-            self.viewModel.captureSession.startRunning()
-            self.viewModel.changeLoadingState(to: false)
-        }
+        viewModel.videoCapture.delegate = self
+        viewModel.loadModel(completion: visionRequestDidComplete)
+        viewModel.setupCamera(completion: cameraSetupDidComplete)
     }
 
-    func setupSession() {
-        guard
-            let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
-            let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice),
-            viewModel.captureSession.canAddInput(videoDeviceInput)
-        else { return }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.videoCapture.start()
+    }
 
-        viewModel.captureSession.beginConfiguration()
-        viewModel.captureSession.sessionPreset = .hd4K3840x2160
-        viewModel.captureSession.addInput(videoDeviceInput)
-        viewModel.captureSession.commitConfiguration()
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        viewModel.resizePreviewLayer(to: videoPreview.bounds)
+    }
 
-        screenRect = UIScreen.main.bounds
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        viewModel.videoCapture.stop()
+    }
 
-        viewModel.previewLayer = AVCaptureVideoPreviewLayer(session: viewModel.captureSession)
-        viewModel.previewLayer.frame = CGRect(
-            x: 0,
-            y: 0,
-            width: screenRect.size.width,
-            height: screenRect.size.height
-        )
-        viewModel.previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        viewModel.previewLayer.connection?.videoOrientation = .portrait
+    private func cameraSetupDidComplete() {
+        addPreviewView()
+        addBoxesView()
+        addPreviewSublayer()
+        viewModel.videoCapture.start()
+    }
+
+    private func addPreviewView() {
+        videoPreview = UIView(frame: view.frame)
+        view.addSubview(videoPreview)
+    }
+
+    private func addBoxesView() {
+        boxesView = DrawingBoundingBoxView(frame: view.frame)
+        view.addSubview(boxesView)
+    }
+
+    private func addPreviewSublayer() {
+        guard let previewLayer = viewModel.videoCapture.previewLayer else { return }
+        viewModel.resizePreviewLayer(to: videoPreview.bounds)
+        videoPreview.layer.addSublayer(previewLayer)
+    }
+
+    private func visionRequestDidComplete(request: VNRequest, error: Error?) {
+        guard let predictions = request.results as? [VNRecognizedObjectObservation] else {
+            viewModel.isInferencing = false
+            viewModel.semaphore.signal()
+            return
+        }
+
+        var filteredPredictions: [VNRecognizedObjectObservation] = []
+        for prediction in predictions {
+            guard !filteredPredictions.contains(where: { $0.label == prediction.label }) else { continue }
+            filteredPredictions.append(prediction)
+        }
 
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
-            self.view.layer.addSublayer(self.viewModel.previewLayer)
+            self.boxesView.predictedObjects = filteredPredictions
+            self.viewModel.isInferencing = false
+            self.viewModel.semaphore.signal()
         }
-
-        // Detector
-        viewModel.videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "sampleBufferQueue"))
-        viewModel.videoOutput.connection(with: .video)?.videoOrientation = .portrait
-        viewModel.captureSession.addOutput(viewModel.videoOutput)
-    }
-
-    func setupLayers() {
-        viewModel.detectionLayer = CALayer()
-        viewModel.detectionLayer.frame = CGRect(
-            x: 0,
-            y: 0,
-            width: screenRect.size.width,
-            height: screenRect.size.height
-        )
-        self.view.layer.addSublayer(viewModel.detectionLayer)
-    }
-}
-
-extension ScannerViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func captureOutput(
-        _ output: AVCaptureOutput,
-        didOutput sampleBuffer: CMSampleBuffer,
-        from connection: AVCaptureConnection
-    ) {
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer)
-
-        do {
-            try imageRequestHandler.perform(viewModel.requests)
-        } catch {
-            logPrint("[Scanner] didOutput with error: \(error.localizedDescription)")
-        }
-    }
-
-    func detectionDidComplete(request: VNRequest, error: Error?) {
-        DispatchQueue.main.async { [weak self] in
-            guard let self, let results = request.results, error == nil else { return }
-            // TODO: - Add values from settings
-            self.viewModel.visionModel?.featureProvider = self.thresholdProvider
-            self.extractDetections(results)
-        }
-    }
-
-    func extractDetections(_ results: [VNObservation]) {
-        viewModel.detectionLayer.sublayers = nil
-
-        for observation in results {
-            guard
-                let objectObservation = observation as? VNRecognizedObjectObservation,
-                let topLabelObservation = objectObservation.labels.first
-            else { continue }
-
-            let objectBounds = VNImageRectForNormalizedRect(
-                objectObservation.boundingBox,
-                Int(screenRect.size.width),
-                Int(screenRect.size.height)
-            )
-
-            let transformedBounds = CGRect(
-                x: objectBounds.minX,
-                y: screenRect.size.height - objectBounds.maxY,
-                width: objectBounds.maxX - objectBounds.minX,
-                height: objectBounds.maxY - objectBounds.minY
-            )
-
-            let boxLayer = self.drawBoundingBox(transformedBounds)
-            let textLayer = self.createTextSubLayer(
-                bounds: transformedBounds,
-                identifier: topLabelObservation.identifier
-            )
-
-            boxLayer.addSublayer(textLayer)
-            viewModel.detectionLayer.addSublayer(boxLayer)
-        }
-    }
-
-    func drawBoundingBox(_ bounds: CGRect) -> CALayer {
-        let boxLayer = CALayer()
-        boxLayer.frame = bounds
-        boxLayer.borderWidth = 4.0
-        boxLayer.borderColor = UIColor(TRColor.sangrina).cgColor
-        boxLayer.cornerRadius = 12
-        return boxLayer
-    }
-
-    func createTextSubLayer(bounds: CGRect, identifier: String) -> CALayer {
-        let background = CALayer()
-        background.backgroundColor = UIColor(TRColor.sangrina).cgColor
-        background.frame = CGRect(x: 0, y: 0, width: bounds.width, height: 20)
-
-        let textLayer = CATextLayer()
-        textLayer.fontSize = 16
-        textLayer.font = UIFont.boldSystemFont(ofSize: 16)
-        textLayer.frame = CGRect(x: 8, y: 4, width: bounds.width - 8, height: background.frame.height - 4)
-        textLayer.string = "\(identifier)"
-
-        background.addSublayer(textLayer)
-        return background
     }
 }
