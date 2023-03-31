@@ -31,6 +31,9 @@
 		1CC300362992DCED006C5D96 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300352992DCED006C5D96 /* MaterialView.swift */; };
 		1CC300382992EF55006C5D96 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300372992EF55006C5D96 /* TabBarButton.swift */; };
 		1CC3003A2992F137006C5D96 /* NavigationCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */; };
+		1CD46E4629D77B2000CD5CAF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD46E4529D77B2000CD5CAF /* ImagePicker.swift */; };
+		1CD46E4A29D77B6C00CD5CAF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD46E4929D77B6C00CD5CAF /* SettingsViewModel.swift */; };
+		1CD46E4C29D77B8C00CD5CAF /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD46E4B29D77B8C00CD5CAF /* UserManager.swift */; };
 		1CF0C1D628FA07FF00CAB508 /* TaroterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */; };
 		1CF0C1D828FA07FF00CAB508 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D728FA07FF00CAB508 /* CardsView.swift */; };
 		1CF0C1DA28FA080400CAB508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF0C1D928FA080400CAB508 /* Assets.xcassets */; };
@@ -109,6 +112,9 @@
 		1CC300352992DCED006C5D96 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		1CC300372992EF55006C5D96 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		1CC300392992F137006C5D96 /* NavigationCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinatorView.swift; sourceTree = "<group>"; };
+		1CD46E4529D77B2000CD5CAF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1CD46E4929D77B6C00CD5CAF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		1CD46E4B29D77B8C00CD5CAF /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		1CF0C1D228FA07FF00CAB508 /* Taroter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taroter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF0C1D528FA07FF00CAB508 /* TaroterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaroterApp.swift; sourceTree = "<group>"; };
 		1CF0C1D728FA07FF00CAB508 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
@@ -171,7 +177,8 @@
 		1C14D4B429D387AF0052779B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1C14D4B529D387DB0052779B /* SettingsView.swift */,
+				1CD46E4829D77B5800CD5CAF /* ViewModels */,
+				1CD46E4729D77B5100CD5CAF /* Views */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -252,6 +259,22 @@
 			isa = PBXGroup;
 			children = (
 				1C9DD133297CCDF800E46636 /* CardDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1CD46E4729D77B5100CD5CAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C14D4B529D387DB0052779B /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1CD46E4829D77B5800CD5CAF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1CD46E4929D77B6C00CD5CAF /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -396,6 +419,7 @@
 				1CF0C21028FA093600CAB508 /* Local Storage */,
 				1CF0C21128FA0BC700CAB508 /* TRColors.swift */,
 				1C8DAC0D29944AE400819425 /* Application.swift */,
+				1CD46E4B29D77B8C00CD5CAF /* UserManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -418,6 +442,7 @@
 				1C9DD12C297CCD2200E46636 /* CardCell.swift */,
 				1CC300352992DCED006C5D96 /* MaterialView.swift */,
 				1C8DAC0F29944C9700819425 /* LoadingView.swift */,
+				1CD46E4529D77B2000CD5CAF /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -639,6 +664,8 @@
 				1CF0C21928FA172800CAB508 /* BackgroundOverlay.swift in Sources */,
 				1C14D4B029C12D4C0052779B /* VideoPreview.swift in Sources */,
 				1C14D4B629D387DB0052779B /* SettingsView.swift in Sources */,
+				1CD46E4629D77B2000CD5CAF /* ImagePicker.swift in Sources */,
+				1CD46E4A29D77B6C00CD5CAF /* SettingsViewModel.swift in Sources */,
 				1C8DAC0C299445D200819425 /* ScannerViewModel.swift in Sources */,
 				1CF0C1DF28FA080400CAB508 /* Persistence.swift in Sources */,
 				1CF0C1E228FA080400CAB508 /* Taroter.xcdatamodeld in Sources */,
@@ -668,6 +695,7 @@
 				1C14D4AE29C12CF40052779B /* VideoPreview+AVCaptureVideoDataOutputSampleBufferDelegate.swift in Sources */,
 				1C8DAC0E29944AE400819425 /* Application.swift in Sources */,
 				1CF3CEE229A990FE00141020 /* TaroterDetector.mlmodel in Sources */,
+				1CD46E4C29D77B8C00CD5CAF /* UserManager.swift in Sources */,
 				1C9DD12B297CC7BD00E46636 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

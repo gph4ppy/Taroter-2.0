@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @ObservedObject var viewModel: SettingsViewModel
+
     var body: some View {
         ZStack {
             BackgroundOverlay()
 
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Image(systemName: "person.circle")
-                        .renderingMode(.template)
-                        .resizable()
+                    AvatarView(imageData: viewModel.userManager.avatar)
                         .frame(width: 130, height: 130)
-                        .foregroundColor(.white)
 
                     Text("Jakub")
                         .font(.largeTitle)
@@ -28,7 +27,12 @@ struct SettingsView: View {
                     Spacer().frame(height: 10)
 
                     Section {
-                        Text("Change Avatar")
+                        Button {
+                            viewModel.showingImagePicker = true
+                        } label: {
+                            Text("Change Avatar")
+                        }
+
                         Text("Change Name")
                         Text("Birthday")
                         Text("Birthday Cards")
@@ -61,11 +65,31 @@ struct SettingsView: View {
                 .padding(.horizontal, 16)
             }
         }
+        .sheet(isPresented: $viewModel.showingImagePicker) {
+            ImagePicker(selectedImageData: $viewModel.userManager.avatar)
+        }
     }
 }
 
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView()
+struct AvatarView: View {
+    let imageData: Data?
+
+    var body: some View {
+        Group {
+            if let imageData, let uiImage = UIImage(data: imageData) {
+                Image(uiImage: uiImage)
+                    .resizable()
+            } else {
+                Image(systemName: "person.circle")
+                    .renderingMode(.template)
+                    .resizable()
+                    .foregroundColor(.white)
+                    .scaledToFit()
+            }
+        }
+        .clipShape(Circle())
+        .overlay {
+            Circle().stroke(TRColor.snow, lineWidth: 3)
+        }
     }
 }
